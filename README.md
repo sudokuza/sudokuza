@@ -63,3 +63,7 @@ Tidak perlu membagikan password, token, atau credential. Saya belum dapat membua
 ## Catatan risiko & pembaruan
 
 Feed dapat tertunda, terbatas, atau berubah cakupannya. Refresh manual meminta scan baru; cache API berlaku 60 detik per instance. Untuk memperbarui snapshot lokal, jalankan `python3 scripts/refresh_snapshot.py`. `python3 scripts/build_universe.py` akan membangun ulang roster *provisional* dari sumber yang sama; jangan menandainya resmi sebelum rekonsiliasi kode-per-kode dengan IDX. Screener ini untuk penyaringan informasi, bukan rekomendasi investasi.
+
+## Diagnosis kesegaran data
+
+Buka `/api/debug?ticker=SEMA` (ganti kode emitennya). Endpoint ini menampilkan baris mentah scanner TradingView beserta header responsnya, dibandingkan dengan quote Yahoo Finance (`SEMA.JK`) lengkap dengan cap waktu, plus kesimpulan singkat sumber mana yang tertinggal.

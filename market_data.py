@@ -157,6 +157,7 @@ def fetch_tradingview_scan() -> tuple[dict[str, dict], int]:
             "Content-Type": "application/json",
             "Accept": "application/json, text/plain, */*",
             "User-Agent": "Mozilla/5.0 (compatible; ScreenerIDX/1.0)",
+            "Cache-Control": "no-cache",
         },
         method="POST",
     )

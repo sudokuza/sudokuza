@@ -6,6 +6,9 @@
       "maxDuration": 30,
       "includeFiles": "data/**"
     },
+    "api/debug.py": {
+      "maxDuration": 30
+    },
     "api/health.py": {
       "maxDuration": 10
     }
