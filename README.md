@@ -26,7 +26,9 @@ python3 build.py
 - **Sentimen makro:** tab publik `APP_SENTIMEN` bila dapat dibaca; bukan data baris emiten.
 - **Roster saat ini:** `data/universe.json` berisi 955 kode dari CSV kepemilikan KSEI bertanggal 27 Feb 2026, ditambah WBSA, JELI, JECX, BACH, EMMI, PRDL, dan RANS. Jumlahnya 962, tetapi **belum diverifikasi kode-per-kode terhadap roster resmi IDX**. IDX endpoint melaporkan 962 record; itu hanya mencocokkan jumlah, bukan membuktikan setiap kodenya benar. Aplikasi menandainya sebagai *provisional*.
 - **Cakupan quote snapshot 29 Sep 2026:** scanner mengembalikan 845 instrumen; 4 tidak cocok dengan roster sementara dan dikeluarkan. Terdapat 841 ticker yang cocok dan 121 kode tanpa quote yang cocok; nilai quote/indikator yang tidak tersedia ditampilkan `N/A`. Cakupan berubah setiap scan.
-- **Kandidat:** kolom historis `kandidat` ada, tetapi rumus pembentuknya tidak ditemukan dalam workbook. Karena itu count/filter/flag kandidat sengaja `N/A` dan dinonaktifkan—bukan dianggap `Tidak` dan bukan ditebak. Kirim rumus, script, atau definisi kriterianya untuk mengaktifkannya.
+- **Kandidat:** rumus historis tidak ada di sheet, jadi aturannya dibuat sendiri (konstanta `CANDIDATE_*` di `market_data.py`, mudah diubah): psikologi positif (Akumulasi/Breakout/Bullish) **dan** kekuatan KUAT, RVOL ≥ 1,5×, posisi harga ≥ 70%, nilai transaksi ≥ Rp1 miliar, tren bukan Downtrend. Ini bukan replika kolom historis sheet.
+- **P/E kosong / negatif:** status valuasi ditampilkan `⚠ Rugi / No Data`, sama seperti sheet (bukan N/A).
+- **Kode tanpa quote (121):** seluruh kolom kosong karena TradingView memang tidak mengembalikan data (umumnya suspen/delisting); baris ditampilkan redup dengan label "Tidak ada quote".
 - **Close dekat high:** versi ini memakai aturan eksplisit `posisi harga ≥ 98%` dari range low–high harian; ini bukan klaim bahwa flag `closeDiHigh` lama sudah direplikasi persis.
 
 `data/stocks.json` dan tampilan tabel dibuat dari roster + scan quote. Tab `APP_EMITEN` **tidak dibaca sebagai sumber baris saham**. Bila quote gagal, API memakai snapshot lokal 962 baris; jika snapshot lengkap pun tidak ada, semua nilai pasar tetap `N/A`.

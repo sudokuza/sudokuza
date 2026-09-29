@@ -45,6 +45,18 @@ TV_COLUMNS = [
 ]
 CACHE_SECONDS = 60
 
+# Aturan Kandidat (buatan sendiri, BUKAN dari sheet). Ubah angka di sini bila perlu.
+CANDIDATE_MIN_RVOL = 1.5        # volume minimal 1,5x rata-rata 30 hari
+CANDIDATE_MIN_POSITION = 0.70   # harga ada di 30% atas range low-high hari ini
+CANDIDATE_MIN_TURNOVER = 1.0    # nilai transaksi minimal Rp1 miliar (buang saham sepi)
+CANDIDATE_RULE_TEXT = (
+    "Kandidat = psikologi positif (Akumulasi/Breakout/Bullish) DAN kekuatan KUAT, "
+    f"RVOL >= {CANDIDATE_MIN_RVOL:g}x, posisi harga >= {CANDIDATE_MIN_POSITION:.0%}, "
+    f"nilai transaksi >= Rp{CANDIDATE_MIN_TURNOVER:g} miliar, dan tren bukan Downtrend."
+)
+NO_QUOTE_NOTE = "Tidak ada quote di TradingView (kemungkinan suspen, delisting, atau kode belum tercatat)."
+LOSS_LABEL = "⚠ Rugi / No Data"
+
 _cache_lock = threading.Lock()
 _cache: dict = {"created": 0.0, "payload": None}
 
@@ -270,10 +282,9 @@ def _sheet_trend(price, sma20, sma50):
 
 
 def _valuation(pe, median_pe):
-    if pe is None:
-        return None
-    if pe <= 0:
-        return "⚠ Rugi / P/E negatif"
+    # Sama seperti sheet: P/E kosong atau negatif = "Rugi / No Data" (bukan N/A).
+    if pe is None or pe <= 0:
+        return LOSS_LABEL
     if median_pe is None:
         return None
     if pe < median_pe * 0.6:
@@ -283,6 +294,21 @@ def _valuation(pe, median_pe):
     if pe < median_pe * 1.8:
         return "🟡 Wajar"
     return "🔴 Mahal"
+
+
+def _candidate(psychology, strength, rvol, position, turnover, trend):
+    """True/False bila semua input tersedia; None hanya bila data quote memang kosong."""
+    if any(v is None for v in (psychology, strength, rvol, position, turnover, trend)):
+        return None
+    positive = any(word in psychology.upper() for word in ("AKUMULASI", "BREAKOUT", "BULLISH"))
+    return bool(
+        positive
+        and "KUAT" in strength.upper()
+        and rvol >= CANDIDATE_MIN_RVOL
+        and position >= CANDIDATE_MIN_POSITION
+        and turnover >= CANDIDATE_MIN_TURNOVER
+        and "DOWNTREND" not in trend.upper()
+    )
 
 
 def _base_stock(issuer: dict) -> dict:
@@ -315,6 +341,7 @@ def _base_stock(issuer: dict) -> dict:
         "sma50": None,
         "quoteAvailable": False,
         "quoteSource": None,
+        "quoteNote": NO_QUOTE_NOTE,
     }
 
 
@@ -390,9 +417,7 @@ def build_stock_rows(universe: list[dict], quotes: dict[str, dict]) -> tuple[lis
             "fastTrade": fast_trade,
             "fastScore": fast_score,
             "trend": trend,
-            # The workbook stores historical candidate booleans, but no
-            # candidate-generation formula is present. Do not guess true/false.
-            "candidate": None,
+            "candidate": _candidate(psychology, strength, rvol, position, turnover, trend),
             # Transparent approximation: close is in the top 2% of today's range.
             "closeHigh": position >= 0.98 if position is not None else None,
             "volume": volume,
@@ -401,6 +426,7 @@ def build_stock_rows(universe: list[dict], quotes: dict[str, dict]) -> tuple[lis
             "sma50": sma50,
             "quoteAvailable": price is not None,
             "quoteSource": "TradingView",
+            "quoteNote": None,
         })
         output.append(stock)
 
@@ -502,11 +528,8 @@ def build_payload(force: bool = False) -> dict:
         "scannerMatched": matched_count if live_quotes else None,
         "scannerUnmatched": unmatched_records,
         "medianPe": median_pe,
-        "candidateRuleReady": False,
-        "candidateNote": (
-            "Formula flag kandidat tidak tersedia di workbook; seluruh flag ditampilkan N/A "
-            "agar tidak menebak berdasarkan data historis."
-        ),
+        "candidateRuleReady": True,
+        "candidateNote": CANDIDATE_RULE_TEXT,
         "closeHighRule": "Posisi harga >= 98% dari low-high hari ini (heuristik tampilan).",
     })
 

@@ -455,3 +455,7 @@ h1 em { color: var(--lime); font-style: normal; }
   .data-note { margin-top: 8px; padding: 8px 9px; }
   .data-note p { font-size: 8px; }
 }
+
+/* Baris emiten tanpa quote */
+.no-quote-row { opacity: .55; }
+.no-quote-cell { color: #8c9bad; font-size: 10px; font-style: italic; }

@@ -338,6 +338,14 @@ function renderRow(stock) {
     ? '<span class="score-na">N/A</span>'
     : `<div class="score-head"><span class="score-value">${numberFormat(0).format(score)}</span><span class="score-track"><i style="width:${Math.max(0, Math.min(100, score))}%"></i></span></div>`;
   const positionTrackClass = rawPosition === null ? 'position-track is-missing' : 'position-track';
+  if (!stock.quoteAvailable) {
+    return `<tr class="no-quote-row" data-ticker="${esc(stock.ticker)}" tabindex="0" aria-label="Buka detail ${esc(stock.ticker)}">
+    <td class="star-cell"><button class="star-button ${saved ? 'is-saved' : ''}" data-star="${esc(stock.ticker)}" type="button" aria-label="${saved ? 'Hapus dari' : 'Tambah ke'} watchlist" title="${saved ? 'Hapus dari' : 'Tambah ke'} watchlist">${saved ? '★' : '☆'}</button></td>
+    <td><div class="stock-identity"><div class="stock-ticker-line"><span class="ticker-code">${esc(stock.ticker)}</span></div><span class="stock-name" title="${esc(stock.name)}">${esc(stock.name || 'N/A')}</span></div></td>
+    <td colspan="8" class="no-quote-cell" title="${esc(stock.quoteNote || '')}">Tidak ada quote · kemungkinan suspen / delisting / kode belum tercatat di TradingView</td>
+    <td class="row-chevron">›</td>
+  </tr>`;
+  }
   return `<tr data-ticker="${esc(stock.ticker)}" tabindex="0" aria-label="Buka detail ${esc(stock.ticker)}">
     <td class="star-cell"><button class="star-button ${saved ? 'is-saved' : ''}" data-star="${esc(stock.ticker)}" type="button" aria-label="${saved ? 'Hapus dari' : 'Tambah ke'} watchlist" title="${saved ? 'Hapus dari' : 'Tambah ke'} watchlist">${saved ? '★' : '☆'}</button></td>
     <td><div class="stock-identity"><div class="stock-ticker-line"><span class="ticker-code">${esc(stock.ticker)}</span>${stock.candidate === true ? '<span class="candidate-chip">Kandidat</span>' : ''}</div><span class="stock-name" title="${esc(stock.name)}">${esc(stock.name || 'N/A')}</span></div></td>
@@ -420,7 +428,7 @@ function renderOverview() {
   $('#page-universe').textContent = numberFormat(0).format(rosterCount);
   $('#metric-universe-foot').textContent = `${numberFormat(0).format(quoteCount)}/${numberFormat(0).format(rosterCount)} quote tersedia`;
   $('#metric-candidates').textContent = candidateReady ? numberFormat(0).format(candidateCount) : 'N/A';
-  $('#metric-candidate-foot').textContent = candidateReady ? 'mengikuti aturan kandidat' : 'aturan historis belum tersedia';
+  $('#metric-candidate-foot').textContent = candidateReady ? 'aturan Kandidat: lihat Aturan screener' : 'aturan historis belum tersedia';
   $('#metric-bullish').textContent = numberFormat(0).format(bullishCount);
 
   const sentimentScore = toNumber(sentiment.skor);
@@ -449,8 +457,8 @@ function renderDataNotice(quoteCount, rosterCount) {
     ? `Roster emiten diverifikasi dari IDX (${numberFormat(0).format(rosterCount)} kode).`
     : `Roster ${numberFormat(0).format(rosterCount)} kode masih sementara (snapshot KSEI + IPO 2026); belum dicocokkan satu per satu dengan IDX.`;
   const unavailable = Math.max(0, rosterCount - quoteCount);
-  const quoteText = `${numberFormat(0).format(quoteCount)}/${numberFormat(0).format(rosterCount)} emiten punya quote; ${numberFormat(0).format(unavailable)} yang tidak tersedia ditampilkan N/A.`;
-  const candidateText = candidateReady ? '' : ' Flag Kandidat juga N/A karena rumus historisnya tidak ada di file yang dibagikan.';
+  const quoteText = `${numberFormat(0).format(quoteCount)}/${numberFormat(0).format(rosterCount)} emiten punya quote; ${numberFormat(0).format(unavailable)} sisanya ditandai \"Tidak ada quote\" (umumnya suspen/delisting).`;
+  const candidateText = candidateReady ? '' : ' Flag Kandidat belum aktif.';
   const note = $('#data-note-text');
   if (note) note.textContent = `${rosterText} ${quoteText}${candidateText}`;
 }
@@ -572,7 +580,7 @@ function showDetail(ticker) {
         ${detailMetric('Nilai transaksi', formatTurnover(stock.turnover))}
         ${detailMetric('Volume hari ini', formatNumber(stock.volume, 0))}
         ${detailMetric('Rata-rata volume 30D', formatNumber(stock.averageVolume30d, 0))}
-        ${detailMetric('P/E ratio', formatNumber(stock.pe, 2))}
+        ${detailMetric('P/E ratio', toNumber(stock.pe) !== null && stock.pe > 0 ? formatNumber(stock.pe, 2) : (stock.quoteAvailable ? 'Rugi / tidak ada data' : 'N/A'))}
         ${detailMetric('Status valuasi', stock.valuation || 'N/A')}
         ${detailMetric('Volatilitas range harian', volatilityPct)}
         ${detailMetric('MA20 / MA50', `${formatPrice(stock.sma20)} / ${formatPrice(stock.sma50)}`)}
@@ -582,7 +590,7 @@ function showDetail(ticker) {
         ${detailMetric('Flag kandidat', candidateStatus)}
       </div>
     </section>
-    <div class="detail-callout"><b>Catatan:</b> harga/volume/MA berasal dari TradingView; rumus score, psikologi, kekuatan, aktivitas, fast trade, tren, dan valuasi diimplementasikan dari spreadsheet. Field yang tidak tersedia tampil N/A. Formula flag kandidat tidak ditemukan, jadi tidak ditebak.</div>`;
+    <div class="detail-callout"><b>Catatan:</b> harga/volume/MA berasal dari TradingView; rumus score, psikologi, kekuatan, aktivitas, fast trade, tren, dan valuasi diimplementasikan dari spreadsheet. Field yang tidak tersedia tampil N/A. Flag Kandidat memakai aturan buatan sendiri (bukan dari sheet): ${esc(state.meta?.candidateNote || '')}</div>`;
 
   elements.drawerScrim.hidden = false;
   elements.drawer.classList.add('open');

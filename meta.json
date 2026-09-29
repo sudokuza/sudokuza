@@ -16,8 +16,8 @@
   "scannerMatched": 841,
   "scannerUnmatched": 4,
   "medianPe": 13.132175344845875,
-  "candidateRuleReady": false,
-  "candidateNote": "Formula flag kandidat tidak tersedia di workbook; seluruh flag ditampilkan N/A agar tidak menebak berdasarkan data historis.",
+  "candidateRuleReady": true,
+  "candidateNote": "Kandidat = psikologi positif (Akumulasi/Breakout/Bullish) DAN kekuatan KUAT, RVOL >= 1.5x, posisi harga >= 70%, nilai transaksi >= Rp1 miliar, dan tren bukan Downtrend.",
   "closeHighRule": "Posisi harga >= 98% dari low-high hari ini (heuristik tampilan).",
   "snapshotSource": "tradingview"
 }
