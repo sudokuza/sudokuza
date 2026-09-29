@@ -1,0 +1,23 @@
+{
+  "snapshotAt": "29 Sep 2026 11:34 WIB",
+  "source": "Google Sheets • APP_EMITEN / APP_SENTIMEN",
+  "syncedAt": "29 Sep 2026 11:34 WIB",
+  "quoteSource": "TradingView scanner",
+  "marketSource": "Google Sheets · APP_SENTIMEN",
+  "rosterSource": "KSEI ownership CSV dated 2026-02-27 + seven 2026 IPO listings",
+  "rosterVerified": false,
+  "rosterStatus": "provisional",
+  "rosterNote": "Provisional roster only. The count matches IDX's reported 962 records, but the codes have not been reconciled one-by-one against the official IDX list.",
+  "rosterAsOf": "2026-09-29",
+  "rosterCount": 962,
+  "quoteCount": 841,
+  "quoteMissing": 121,
+  "scannerRecords": 845,
+  "scannerMatched": 841,
+  "scannerUnmatched": 4,
+  "medianPe": 13.132175344845875,
+  "candidateRuleReady": false,
+  "candidateNote": "Formula flag kandidat tidak tersedia di workbook; seluruh flag ditampilkan N/A agar tidak menebak berdasarkan data historis.",
+  "closeHighRule": "Posisi harga >= 98% dari low-high hari ini (heuristik tampilan).",
+  "snapshotSource": "tradingview"
+}

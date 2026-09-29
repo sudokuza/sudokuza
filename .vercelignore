@@ -1,0 +1,7 @@
+source.xlsx
+tv_scan.json
+jina.txt
+render.yaml
+__pycache__/
+*.pyc
+.git/

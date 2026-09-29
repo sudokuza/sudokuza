@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1019">
+  <title>Sinyal & Trend — Screener Saham IDX</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navigasi utama">
+      <a class="brand" href="#top" aria-label="Sinyal dan Trend, beranda">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span class="brand-copy"><strong>SINYAL<span>&</span>TREND</strong><small>IDX MARKET DESK</small></span>
+      </a>
+
+      <div class="side-label">WORKSPACE</div>
+      <nav class="side-nav">
+        <button class="nav-item active" data-nav="all" type="button">
+          <span class="nav-icon icon-grid" aria-hidden="true"></span><span>Screener</span><span class="nav-count" id="side-universe">—</span>
+        </button>
+        <button class="nav-item" id="candidate-nav" data-nav="candidate" type="button">
+          <span class="nav-icon icon-target" aria-hidden="true"></span><span>Kandidat</span><span class="nav-count" id="side-candidates">N/A</span>
+        </button>
+        <button class="nav-item" data-nav="watchlist" type="button">
+          <span class="nav-icon icon-star" aria-hidden="true">☆</span><span>Watchlist</span><span class="nav-count" id="side-watchlist">0</span>
+        </button>
+      </nav>
+
+      <div class="side-label side-label-spaced">ANALISIS</div>
+      <nav class="side-nav">
+        <button class="nav-item" data-nav="bullish" type="button">
+          <span class="nav-icon icon-pulse" aria-hidden="true">↗</span><span>Sinyal bullish</span>
+        </button>
+        <button class="nav-item" data-nav="uptrend" type="button">
+          <span class="nav-icon icon-trend" aria-hidden="true">⌁</span><span>Tren naik</span>
+        </button>
+        <button class="nav-item" id="rules-open" type="button">
+          <span class="nav-icon icon-info" aria-hidden="true">i</span><span>Aturan screener</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+      <div class="sidebar-source">
+        <div class="source-heading"><span class="live-dot" id="side-live-dot"></span><span id="side-source-label">Memuat sumber data</span></div>
+        <p id="side-source-description">Quote & indikator dari TradingView. Aturan score diambil dari sheet; field yang kosong tampil N/A.</p>
+        <button type="button" class="source-link" id="open-source">Buka sheet acuan <span aria-hidden="true">↗</span></button>
+      </div>
+      <div class="sidebar-foot">BUKAN REKOMENDASI INVESTASI</div>
+    </aside>
+
+    <main class="main-content" id="top">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>MARKET DESK</span><span class="crumb-slash">/</span><span>INDONESIA</span><span class="market-open"><i></i> IDX EQUITIES</span></div>
+        <div class="topbar-actions">
+          <div class="sync-status" id="sync-status"><span class="status-dot"></span><span id="sync-label">Memuat data…</span></div>
+          <button class="icon-button" id="refresh-btn" type="button" title="Segarkan data" aria-label="Segarkan data"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4.8 9a7.5 7.5 0 0 1 12.6-2.2L20 9M4 17v-5h5m10.2 3a7.5 7.5 0 0 1-12.6 2.2L4 15"/></svg></button>
+          <button class="avatar" type="button" title="Screener pribadi">S</button>
+        </div>
+      </header>
+
+      <section class="page-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> SCAN PASAR HARIAN</div>
+          <h1>Screener <em>saham</em></h1>
+          <p class="page-description">Pantau <span id="page-universe">—</span> kode emiten dengan volume, posisi harga, momentum, dan tren.</p>
+        </div>
+        <div class="heading-meta">
+          <div class="date-chip"><span class="calendar-icon" aria-hidden="true">▦</span><span id="today-label">—</span></div>
+          <div class="source-caption">Quote <b>TradingView</b><span class="source-separator">·</span> <span id="data-time">—</span></div>
+        </div>
+      </section>
+
+      <section class="market-strip" aria-label="Ringkasan indeks pasar">
+        <div class="market-strip-label"><span class="market-pulse"></span> PASAR GLOBAL</div>
+        <div class="market-tickers" id="market-tickers">
+          <div class="ticker-loading">Mengambil data pasar…</div>
+        </div>
+      </section>
+
+      <aside class="data-note" id="data-note" aria-live="polite">
+        <span class="data-note-icon" aria-hidden="true">ⓘ</span>
+        <p id="data-note-text">Memuat status roster, cakupan quote, dan ketersediaan flag kandidat…</p>
+      </aside>
+
+      <section class="overview-grid" aria-label="Ringkasan screener">
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">UNIVERSE EMITEN</span><span class="metric-icon icon-universe">▦</span></div>
+          <div class="metric-main"><strong id="metric-universe">—</strong><span class="metric-unit">IDX</span></div>
+          <div class="metric-foot"><span class="metric-indicator neutral"></span><span id="metric-universe-foot">quote tersedia —</span></div>
+          <div class="metric-spark spark-slate" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">FLAG KANDIDAT</span><span class="metric-icon icon-candidate">◎</span></div>
+          <div class="metric-main"><strong id="metric-candidates">N/A</strong><span class="metric-unit">saham</span></div>
+          <div class="metric-foot"><span class="metric-indicator neutral"></span><span id="metric-candidate-foot">aturan historis belum tersedia</span></div>
+          <div class="metric-spark spark-lime" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-top"><span class="metric-label">SETUP BULLISH</span><span class="metric-icon icon-bullish">↗</span></div>
+          <div class="metric-main"><strong id="metric-bullish">—</strong><span class="metric-unit">saham</span></div>
+          <div class="metric-foot"><span class="metric-indicator positive"></span><span>psikologi positif + kekuatan KUAT</span></div>
+          <div class="metric-spark spark-teal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </article>
+        <article class="metric-card sentiment-card">
+          <div class="metric-top"><span class="metric-label">SENTIMEN PASAR</span><span class="metric-icon icon-sentiment">◉</span></div>
+          <div class="metric-main"><strong id="metric-sentiment-score">—</strong><span class="sentiment-pill" id="metric-sentiment-label">—</span></div>
+          <div class="metric-foot"><span class="metric-indicator" id="sentiment-indicator"></span><span id="metric-sentiment-sub">gabungan indikator makro</span></div>
+          <div class="sentiment-track"><span id="sentiment-track-fill"></span><i></i></div>
+        </article>
+      </section>
+
+      <section class="screener-section" id="screener">
+        <div class="section-title-row">
+          <div>
+            <div class="section-kicker">UNIVERSE IDX <span>·</span> <span id="last-refresh-inline">—</span></div>
+            <h2>Daftar emiten <span class="result-count" id="result-count">—</span></h2>
+          </div>
+          <div class="section-actions">
+            <button class="button button-quiet" id="rules-open-secondary" type="button"><span class="button-symbol">⌘</span> Logika skor</button>
+            <button class="button button-export" id="export-btn" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 17v3h14v-3"/></svg> Ekspor CSV</button>
+          </div>
+        </div>
+
+        <div class="screener-toolbar">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="search-input" type="search" placeholder="Cari kode atau nama emiten…" autocomplete="off" aria-label="Cari kode atau nama emiten">
+            <kbd>/</kbd>
+          </div>
+          <div class="toolbar-right">
+            <button class="button button-filter" id="filters-toggle" type="button" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10m-7 6h4"/></svg> Filter <span class="filter-count" id="filter-count">0</span></button>
+            <label class="page-size-label" for="page-size">Baris</label>
+            <select id="page-size" class="select-compact" aria-label="Jumlah baris per halaman"><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>
+          </div>
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Filter cepat">
+          <button class="filter-tab active" data-filter="all" type="button" role="tab" aria-selected="true">Semua <span id="tab-all-count">—</span></button>
+          <button class="filter-tab" id="candidate-tab" data-filter="candidate" type="button" role="tab" aria-selected="false" disabled title="Aturan kandidat historis belum tersedia">Kandidat <span id="tab-candidate-count">N/A</span></button>
+          <button class="filter-tab" data-filter="bullish" type="button" role="tab" aria-selected="false">Bullish</button>
+          <button class="filter-tab" data-filter="uptrend" type="button" role="tab" aria-selected="false">Uptrend</button>
+          <button class="filter-tab" data-filter="pullback" type="button" role="tab" aria-selected="false">Pullback</button>
+          <button class="filter-tab" data-filter="rebound" type="button" role="tab" aria-selected="false">Rebound</button>
+          <button class="filter-tab" data-filter="downtrend" type="button" role="tab" aria-selected="false">Downtrend</button>
+          <button class="filter-tab watch-tab" data-filter="watchlist" type="button" role="tab" aria-selected="false"><span>☆</span> Watchlist <span id="tab-watchlist-count">0</span></button>
+        </div>
+
+        <div class="advanced-filters" id="advanced-filters" hidden>
+          <div class="advanced-head"><div><strong>Filter lanjutan</strong><span>Gabungkan filter untuk mempersempit hasil.</span></div><button id="clear-filters" class="text-button" type="button">Reset semua</button></div>
+          <div class="advanced-grid">
+            <label class="filter-control"><span>Skor minimum</span><select id="min-score"><option value="0">Semua skor</option><option value="30">30+</option><option value="50">50+</option><option value="70">70+</option></select></label>
+            <label class="filter-control"><span>RVOL minimum</span><select id="min-rvol"><option value="0">Semua RVOL</option><option value="0.8">0,8×+</option><option value="1">1,0×+</option><option value="1.5">1,5×+</option><option value="2">2,0×+</option><option value="3">3,0×+</option></select></label>
+            <label class="filter-control"><span>Tren MA20/50</span><select id="trend-filter"><option value="all">Semua tren</option><option value="uptrend">Uptrend</option><option value="rebound">Rebound</option><option value="pullback">Pullback</option><option value="downtrend">Downtrend</option></select></label>
+            <label class="filter-control"><span>Kekuatan sinyal</span><select id="strength-filter"><option value="all">Semua kekuatan</option><option value="strong">Kuat / sangat kuat</option><option value="medium">Sedang</option><option value="weak">Lemah / sangat lemah</option></select></label>
+            <label class="filter-control"><span>Fast trade</span><select id="fast-filter"><option value="all">Semua status</option><option value="hot">Hot scalp (80+)</option><option value="active">Aktif trading (50–79)</option><option value="skip">Skip / sepi (&lt;50)</option></select></label>
+            <label class="filter-control"><span>Perubahan harian</span><select id="change-filter"><option value="all">Semua perubahan</option><option value="positive">Naik (&gt;0%)</option><option value="negative">Turun (&lt;0%)</option><option value="flat">Datar (=0%)</option></select></label>
+            <label class="filter-check"><input id="close-high-filter" type="checkbox"><span class="checkmark"></span><span>Tutup dekat high</span></label>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="stock-table">
+            <thead>
+              <tr>
+                <th class="star-col" aria-label="Watchlist"></th>
+                <th><button class="sort-button" data-sort="ticker" type="button">EMITEN <span>↕</span></button></th>
+                <th><button class="sort-button" data-sort="price" type="button">HARGA <span>↕</span></button></th>
+                <th><button class="sort-button" data-sort="change" type="button">CHG % <span>↕</span></button></th>
+                <th><button class="sort-button current-sort" data-sort="score" type="button">SCORE <span>↓</span></button></th>
+                <th class="column-rvol"><button class="sort-button" data-sort="rvol" type="button">RVOL <span>↕</span></button></th>
+                <th class="column-position"><button class="sort-button" data-sort="position" type="button">POSISI <span>↕</span></button></th>
+                <th><button class="sort-button" data-sort="strength" type="button">KEKUATAN <span>↕</span></button></th>
+                <th><button class="sort-button" data-sort="trend" type="button">TREN <span>↕</span></button></th>
+                <th class="column-activity">AKTIVITAS</th>
+                <th class="chevron-col"></th>
+              </tr>
+            </thead>
+            <tbody id="stock-rows">
+              <tr><td colspan="11" class="loading-cell"><span class="loader"></span> Memuat data emiten…</td></tr>
+            </tbody>
+          </table>
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-icon">⌕</span><strong>Tidak ada saham yang cocok</strong><p>Coba ubah kata kunci atau longgarkan filter.</p><button class="button button-quiet" id="empty-reset" type="button">Reset pencarian & filter</button>
+          </div>
+        </div>
+        <div class="table-footer">
+          <div class="table-footnote"><span class="footnote-dot"></span> Quote/indikator dari TradingView; N/A berarti field tidak tersedia, bukan nol.</div>
+          <div class="pagination"><span id="page-summary">—</span><button id="prev-page" type="button" aria-label="Halaman sebelumnya">‹</button><span class="page-number" id="page-number">1</span><button id="next-page" type="button" aria-label="Halaman berikutnya">›</button></div>
+        </div>
+      </section>
+
+      <footer class="app-footer"><span>© <span id="year-label"></span> Sinyal & Trend</span><span>Rumus screener mengikuti sheet · Bukan rekomendasi investasi.</span><button type="button" id="footer-rules">Lihat metodologi</button></footer>
+    </main>
+  </div>
+
+  <div class="drawer-scrim" id="drawer-scrim" hidden></div>
+  <aside class="detail-drawer" id="detail-drawer" aria-label="Detail emiten" aria-hidden="true">
+    <div id="detail-content"></div>
+  </aside>
+
+  <div class="modal-scrim" id="rules-modal" hidden role="dialog" aria-modal="true" aria-labelledby="rules-title">
+    <div class="rules-panel">
+      <div class="modal-header"><div><div class="eyebrow"><span class="eyebrow-line"></span> TRANSPARANSI MODEL</div><h2 id="rules-title">Cara kerja screener</h2></div><button class="icon-button modal-close" id="rules-close" type="button" aria-label="Tutup">×</button></div>
+      <p class="modal-intro">Baris saham tidak diambil dari 489 contoh di tab <b>APP_EMITEN</b>. Roster sementara berisi 962 kode dari snapshot KSEI 27 Feb 2026 ditambah tujuh IPO 2026; belum dicocokkan satu per satu dengan daftar resmi IDX. Harga, volume, P/E, dan MA diambil dari TradingView; rumus indikator di bawah mengikuti formula yang terbaca pada spreadsheet.</p>
+      <div class="rule-list">
+        <article class="rule-item"><span class="rule-number">01</span><div><h3>Score · skala 0–100</h3><p><b>40%</b> RVOL (maksimum 3×) + <b>25%</b> posisi harga harian + <b>20%</b> perubahan positif (maksimum 5%) + <b>15%</b> nilai transaksi (maksimum Rp100 miliar). Perubahan negatif tidak mengurangi skor.</p></div></article>
+        <article class="rule-item"><span class="rule-number">02</span><div><h3>RVOL & posisi harga</h3><p>RVOL = volume hari ini ÷ average volume 30D. Posisi = (harga − low) ÷ (high − low + 0,001), dibulatkan 2 desimal. Nilai transaksi = harga × volume ÷ 1 miliar. Sumber tidak menyediakan nilai untuk suatu emiten? Kolom terkait tampil N/A dan tidak dipaksa menjadi nol.</p></div></article>
+        <article class="rule-item"><span class="rule-number">03</span><div><h3>Psikologi, kekuatan & bullish</h3><p>Label psikologi dan kekuatan memakai ambang RVOL, posisi, perubahan, dan nilai transaksi pada formula sheet. Filter “Bullish” menyalin aturan tampilan SINYAL&amp;TREND: psikologi mengandung Akumulasi/Breakout/Bullish <b>dan</b> kekuatan mengandung KUAT.</p></div></article>
+        <article class="rule-item"><span class="rule-number">04</span><div><h3>Fast Trade</h3><p>Skor gabungan volatilitas (hingga 30 poin), harga di atas open (30 poin), dan RVOL (hingga 40 poin). Skor 80+ ditandai Hot Scalp; 50–79 Aktif Trading; di bawah 50 Skip/Sepi.</p></div></article>
+        <article class="rule-item"><span class="rule-number">05</span><div><h3>Tren MA20/50 & valuasi</h3><p>Tren mengikuti cabang formula sheet dengan harga terakhir dan MA20/MA50 TradingView. Valuasi menerapkan ambang P/E yang sama, tetapi median dihitung ulang dari P/E positif yang tersedia di scan—bukan dari 489 baris contoh.</p></div></article>
+        <article class="rule-item"><span class="rule-number">06</span><div><h3>Flag kandidat & dekat high</h3><p>Formula pembentuk flag kandidat tidak ditemukan pada workbook (yang tersedia hanya nilai historis), jadi count/filter Kandidat ditampilkan N/A alih-alih ditebak. “Close dekat high” pada versi ini adalah aturan transparan: posisi harga ≥98% dari rentang low–high hari ini.</p></div></article>
+      </div>
+      <div class="rules-caveat"><span>ⓘ</span><p>Scan TradingView terakhir memuat 845 instrumen; 4 tidak cocok dengan roster sementara dan dikecualikan, sehingga 841/962 kode memiliki quote saat snapshot ini. Cakupan dapat berubah. Data dapat tertunda dan bukan rekomendasi investasi; verifikasi kode/quote dengan sumber resmi sebelum mengambil keputusan.</p></div>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "regions": ["sin1"],
+  "functions": {
+    "api/data.py": {
+      "maxDuration": 30,
+      "includeFiles": "data/**"
+    },
+    "api/health.py": {
+      "maxDuration": 10
+    }
+  }
+}
