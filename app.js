@@ -210,9 +210,8 @@ function matchesQuickFilter(stock) {
     case 'candidate': return Boolean(stock.candidate);
     case 'bullish': return isBullish(stock);
     case 'uptrend': return trendKey(stock) === 'uptrend';
-    case 'pullback': return trendKey(stock) === 'pullback';
-    case 'rebound': return trendKey(stock) === 'rebound';
-    case 'downtrend': return trendKey(stock) === 'downtrend';
+    case 'scalping': return stock.scalping === true;
+    case 'swing': return stock.swing === true;
     case 'watchlist': return state.favorites.has(stock.ticker);
     default: return true;
   }
@@ -378,6 +377,8 @@ function renderTable() {
   $('#side-universe').textContent = numberFormat(0).format(state.stocks.length);
   $('#side-candidates').textContent = candidateReady ? numberFormat(0).format(candidateCount) : 'N/A';
   $('#side-watchlist').textContent = numberFormat(0).format(state.favorites.size);
+  $('#side-scalping').textContent = numberFormat(0).format(state.stocks.filter((stock) => stock.scalping === true).length);
+  $('#side-swing').textContent = numberFormat(0).format(state.stocks.filter((stock) => stock.swing === true).length);
   ['candidate-tab', 'candidate-nav'].forEach((id) => {
     const control = $(`#${id}`);
     if (control) {
@@ -588,6 +589,8 @@ function showDetail(ticker) {
         ${detailMetric('Fast Trade', stock.fastTrade || 'N/A')}
         ${detailMetric('Close dekat high', closeHigh)}
         ${detailMetric('Flag kandidat', candidateStatus)}
+        ${detailMetric('Cocok scalping', stock.scalping === true ? 'Ya' : stock.scalping === false ? 'Tidak' : 'N/A')}
+        ${detailMetric('Cocok swing', stock.swing === true ? 'Ya' : stock.swing === false ? 'Tidak' : 'N/A')}
       </div>
     </section>
     <div class="detail-callout"><b>Catatan:</b> harga/volume/MA berasal dari TradingView; rumus score, psikologi, kekuatan, aktivitas, fast trade, tren, dan valuasi diimplementasikan dari spreadsheet. Field yang tidak tersedia tampil N/A. Flag Kandidat memakai aturan buatan sendiri (bukan dari sheet): ${esc(state.meta?.candidateNote || '')}</div>`;
@@ -658,11 +661,13 @@ function exportCsv() {
     showToast('Tidak ada baris untuk diekspor.');
     return;
   }
-  const headers = ['Kode Emiten', 'Nama Perusahaan', 'Harga', 'Open', 'Perubahan %', 'Score', 'RVOL', 'Posisi Harga', 'Nilai Transaksi (Rp miliar)', 'Psikologi Pasar', 'Kekuatan Sinyal', 'Aktivitas', 'Fast Trade', 'Tren MA20/50', 'Kandidat'];
+  const headers = ['Kode Emiten', 'Nama Perusahaan', 'Harga', 'Open', 'Perubahan %', 'Score', 'RVOL', 'Posisi Harga', 'Nilai Transaksi (Rp miliar)', 'Psikologi Pasar', 'Kekuatan Sinyal', 'Aktivitas', 'Fast Trade', 'Tren MA20/50', 'Kandidat', 'Scalping', 'Swing'];
   const rows = filtered.map((stock) => [
     stock.ticker, stock.name, stock.price, stock.open, stock.change, stock.score, stock.rvol,
     stock.position, stock.turnover, stock.psychology, stock.strength, stock.activity,
     stock.fastTrade, stock.trend, stock.candidate === null || stock.candidate === undefined ? 'N/A' : stock.candidate ? 'Ya' : 'Tidak',
+    stock.scalping === null || stock.scalping === undefined ? 'N/A' : stock.scalping ? 'Ya' : 'Tidak',
+    stock.swing === null || stock.swing === undefined ? 'N/A' : stock.swing ? 'Ya' : 'Tidak',
   ]);
   const csv = [headers, ...rows].map((row) => row.map((value) => {
     const safeValue = String(value ?? '').replace(/"/g, '""');

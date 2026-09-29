@@ -54,6 +54,31 @@ CANDIDATE_RULE_TEXT = (
     f"RVOL >= {CANDIDATE_MIN_RVOL:g}x, posisi harga >= {CANDIDATE_MIN_POSITION:.0%}, "
     f"nilai transaksi >= Rp{CANDIDATE_MIN_TURNOVER:g} miliar, dan tren bukan Downtrend."
 )
+# ---- Aturan SCALPING (trading intraday, butuh momentum hari ini + likuid) ----
+SCALP_MIN_FAST_SCORE = 80       # = status "HOT SCALP" di kolom Fast Trade sheet
+SCALP_MIN_RVOL = 1.5            # volume hari ini minimal 1,5x rata-rata
+SCALP_MIN_TURNOVER = 5.0        # nilai transaksi minimal Rp5 miliar (gampang masuk/keluar)
+SCALP_MIN_POSITION = 0.60       # harga ada di bagian atas range hari ini
+SCALP_MAX_CHANGE = 20.0         # naik > 20% dianggap rawan ARA/kejar harga, dikeluarkan
+SCALP_RULE_TEXT = (
+    f"Scalping = Fast Trade >= {SCALP_MIN_FAST_SCORE} (Hot Scalp), RVOL >= {SCALP_MIN_RVOL:g}x, "
+    f"nilai transaksi >= Rp{SCALP_MIN_TURNOVER:g} miliar, posisi harga >= {SCALP_MIN_POSITION:.0%}, "
+    f"dan naik hari ini tetapi tidak lebih dari {SCALP_MAX_CHANGE:g}%."
+)
+
+# ---- Aturan SWING (hold beberapa hari-minggu, butuh tren + tidak kejar harga) ----
+SWING_MIN_TURNOVER = 2.0        # nilai transaksi minimal Rp2 miliar
+SWING_MIN_RVOL = 0.8            # volume tidak sepi
+SWING_MAX_EXTENSION = 0.10      # uptrend: harga maks 10% di atas MA20 (jangan kejar)
+SWING_MAX_DROP = -3.0           # turun hari ini lebih dari 3% dikeluarkan
+SWING_BAD_PSYCHOLOGY = ("SELL OFF", "DISTRIBUSI", "LEMAH SEPI")
+SWING_RULE_TEXT = (
+    "Swing = tren Uptrend (harga <= MA20 + "
+    f"{SWING_MAX_EXTENSION:.0%}) atau Pullback yang masih di atas MA50, "
+    f"nilai transaksi >= Rp{SWING_MIN_TURNOVER:g} miliar, RVOL >= {SWING_MIN_RVOL:g}x, "
+    f"psikologi bukan Sell Off/Distribusi/Lemah Sepi, kekuatan bukan Lemah, "
+    f"dan tidak turun lebih dari {abs(SWING_MAX_DROP):g}% hari ini."
+)
 NO_QUOTE_NOTE = "Tidak ada quote di TradingView (kemungkinan suspen, delisting, atau kode belum tercatat)."
 LOSS_LABEL = "⚠ Rugi / No Data"
 
@@ -311,6 +336,40 @@ def _candidate(psychology, strength, rvol, position, turnover, trend):
     )
 
 
+def _scalping(fast_score, rvol, turnover, position, change):
+    if any(v is None for v in (fast_score, rvol, turnover, position, change)):
+        return None
+    return bool(
+        fast_score >= SCALP_MIN_FAST_SCORE
+        and rvol >= SCALP_MIN_RVOL
+        and turnover >= SCALP_MIN_TURNOVER
+        and position >= SCALP_MIN_POSITION
+        and 0 < change <= SCALP_MAX_CHANGE
+    )
+
+
+def _swing(trend, price, sma20, sma50, rvol, turnover, change, psychology, strength):
+    if any(v is None for v in (trend, price, sma20, sma50, rvol, turnover, change, psychology, strength)):
+        return None
+    trend_u = trend.upper()
+    if "UPTREND" in trend_u and "DOWN" not in trend_u:
+        setup_ok = price <= sma20 * (1 + SWING_MAX_EXTENSION)
+    elif "PULLBACK" in trend_u:
+        setup_ok = price >= sma50
+    else:  # Rebound & Downtrend tidak dianggap setup swing
+        setup_ok = False
+    psychology_u = psychology.upper()
+    strength_u = strength.upper()
+    return bool(
+        setup_ok
+        and turnover >= SWING_MIN_TURNOVER
+        and rvol >= SWING_MIN_RVOL
+        and change > SWING_MAX_DROP
+        and not any(word in psychology_u for word in SWING_BAD_PSYCHOLOGY)
+        and not ("LEMAH" in strength_u and "KUAT" not in strength_u)
+    )
+
+
 def _base_stock(issuer: dict) -> dict:
     return {
         "ticker": issuer["ticker"],
@@ -334,6 +393,8 @@ def _base_stock(issuer: dict) -> dict:
         "fastScore": None,
         "trend": None,
         "candidate": None,
+        "scalping": None,
+        "swing": None,
         "closeHigh": None,
         "volume": None,
         "averageVolume30d": None,
@@ -418,6 +479,8 @@ def build_stock_rows(universe: list[dict], quotes: dict[str, dict]) -> tuple[lis
             "fastScore": fast_score,
             "trend": trend,
             "candidate": _candidate(psychology, strength, rvol, position, turnover, trend),
+            "scalping": _scalping(fast_score, rvol, turnover, position, change),
+            "swing": _swing(trend, price, sma20, sma50, rvol, turnover, change, psychology, strength),
             # Transparent approximation: close is in the top 2% of today's range.
             "closeHigh": position >= 0.98 if position is not None else None,
             "volume": volume,
@@ -530,6 +593,8 @@ def build_payload(force: bool = False) -> dict:
         "medianPe": median_pe,
         "candidateRuleReady": True,
         "candidateNote": CANDIDATE_RULE_TEXT,
+        "scalpingNote": SCALP_RULE_TEXT,
+        "swingNote": SWING_RULE_TEXT,
         "closeHighRule": "Posisi harga >= 98% dari low-high hari ini (heuristik tampilan).",
     })
 

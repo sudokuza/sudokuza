@@ -28,13 +28,13 @@
         </button>
       </nav>
 
-      <div class="side-label side-label-spaced">ANALISIS</div>
+      <div class="side-label side-label-spaced">GAYA TRADING</div>
       <nav class="side-nav">
-        <button class="nav-item" data-nav="bullish" type="button">
-          <span class="nav-icon icon-pulse" aria-hidden="true">↗</span><span>Sinyal bullish</span>
+        <button class="nav-item" data-nav="scalping" type="button" title="Momentum intraday, likuid, volume ramai">
+          <span class="nav-icon icon-pulse" aria-hidden="true">⚡</span><span>Scalping</span><span class="nav-count" id="side-scalping">—</span>
         </button>
-        <button class="nav-item" data-nav="uptrend" type="button">
-          <span class="nav-icon icon-trend" aria-hidden="true">⌁</span><span>Tren naik</span>
+        <button class="nav-item" data-nav="swing" type="button" title="Tren naik / koreksi sehat, cocok ditahan beberapa hari">
+          <span class="nav-icon icon-trend" aria-hidden="true">⌁</span><span>Swing</span><span class="nav-count" id="side-swing">—</span>
         </button>
         <button class="nav-item" id="rules-open" type="button">
           <span class="nav-icon icon-info" aria-hidden="true">i</span><span>Aturan screener</span>
@@ -141,9 +141,6 @@
           <button class="filter-tab" id="candidate-tab" data-filter="candidate" type="button" role="tab" aria-selected="false" disabled title="Aturan kandidat historis belum tersedia">Kandidat <span id="tab-candidate-count">N/A</span></button>
           <button class="filter-tab" data-filter="bullish" type="button" role="tab" aria-selected="false">Bullish</button>
           <button class="filter-tab" data-filter="uptrend" type="button" role="tab" aria-selected="false">Uptrend</button>
-          <button class="filter-tab" data-filter="pullback" type="button" role="tab" aria-selected="false">Pullback</button>
-          <button class="filter-tab" data-filter="rebound" type="button" role="tab" aria-selected="false">Rebound</button>
-          <button class="filter-tab" data-filter="downtrend" type="button" role="tab" aria-selected="false">Downtrend</button>
           <button class="filter-tab watch-tab" data-filter="watchlist" type="button" role="tab" aria-selected="false"><span>☆</span> Watchlist <span id="tab-watchlist-count">0</span></button>
         </div>
 
@@ -211,6 +208,8 @@
         <article class="rule-item"><span class="rule-number">04</span><div><h3>Fast Trade</h3><p>Skor gabungan volatilitas (hingga 30 poin), harga di atas open (30 poin), dan RVOL (hingga 40 poin). Skor 80+ ditandai Hot Scalp; 50–79 Aktif Trading; di bawah 50 Skip/Sepi.</p></div></article>
         <article class="rule-item"><span class="rule-number">05</span><div><h3>Tren MA20/50 & valuasi</h3><p>Tren mengikuti cabang formula sheet dengan harga terakhir dan MA20/MA50 TradingView. Valuasi menerapkan ambang P/E yang sama, tetapi median dihitung ulang dari P/E positif yang tersedia di scan—bukan dari 489 baris contoh. Emiten dengan P/E kosong atau negatif diberi label “Rugi / No Data”, sama seperti di sheet.</p></div></article>
         <article class="rule-item"><span class="rule-number">06</span><div><h3>Flag kandidat & dekat high</h3><p>Rumus flag kandidat tidak ada di sheet, jadi aturannya dibuat sendiri: psikologi positif (Akumulasi/Breakout/Bullish) <b>dan</b> kekuatan KUAT, RVOL ≥ 1,5×, posisi harga ≥ 70%, nilai transaksi ≥ Rp1 miliar, dan tren bukan Downtrend. Ini bukan replika kolom historis sheet. “Close dekat high” adalah aturan transparan: posisi harga ≥98% dari rentang low–high hari ini.</p></div></article>
+        <article class="rule-item"><span class="rule-number">07</span><div><h3>Scalping</h3><p>Untuk trading cepat (masuk-keluar di hari yang sama). Syarat: status <b>Hot Scalp</b> (Fast Trade ≥ 80), RVOL ≥ 1,5×, nilai transaksi ≥ Rp5 miliar agar mudah keluar, posisi harga ≥ 60% dari range hari ini, dan naik hari ini tetapi tidak lebih dari 20% (menghindari saham yang sudah ARA/rawan kejar harga).</p></div></article>
+        <article class="rule-item"><span class="rule-number">08</span><div><h3>Swing</h3><p>Untuk hold beberapa hari sampai minggu. Syarat: tren <b>Uptrend</b> dengan harga tidak lebih dari 10% di atas MA20 (tidak mengejar), atau <b>Pullback</b> yang masih di atas MA50 (koreksi sehat). Nilai transaksi ≥ Rp2 miliar, RVOL ≥ 0,8×, psikologi bukan Sell Off/Distribusi/Lemah Sepi, kekuatan bukan Lemah, dan tidak turun lebih dari 3% hari ini. Rebound dan Downtrend tidak dimasukkan.</p></div></article>
       </div>
       <div class="rules-caveat"><span>ⓘ</span><p>Scan TradingView terakhir memuat 845 instrumen; 4 tidak cocok dengan roster sementara dan dikecualikan, sehingga 841/962 kode memiliki quote saat snapshot ini. Cakupan dapat berubah. Data dapat tertunda dan bukan rekomendasi investasi; verifikasi kode/quote dengan sumber resmi sebelum mengambil keputusan.</p></div>
     </div>

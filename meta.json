@@ -19,5 +19,7 @@
   "candidateRuleReady": true,
   "candidateNote": "Kandidat = psikologi positif (Akumulasi/Breakout/Bullish) DAN kekuatan KUAT, RVOL >= 1.5x, posisi harga >= 70%, nilai transaksi >= Rp1 miliar, dan tren bukan Downtrend.",
   "closeHighRule": "Posisi harga >= 98% dari low-high hari ini (heuristik tampilan).",
-  "snapshotSource": "tradingview"
+  "snapshotSource": "tradingview",
+  "scalpingNote": "Scalping = Fast Trade >= 80 (Hot Scalp), RVOL >= 1.5x, nilai transaksi >= Rp5 miliar, posisi harga >= 60%, dan naik hari ini tetapi tidak lebih dari 20%.",
+  "swingNote": "Swing = tren Uptrend (harga <= MA20 + 10%) atau Pullback yang masih di atas MA50, nilai transaksi >= Rp2 miliar, RVOL >= 0.8x, psikologi bukan Sell Off/Distribusi/Lemah Sepi, kekuatan bukan Lemah, dan tidak turun lebih dari 3% hari ini."
 }
