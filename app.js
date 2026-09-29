@@ -159,8 +159,8 @@ async function syncData(manual = false) {
     const result = await response.json();
     if (Array.isArray(result.stocks) && result.stocks.length) state.stocks = result.stocks;
     if (result.market && Object.keys(result.market).length) state.market = result.market;
-    state.meta = { ...state.meta, ...(result.meta || {}), syncedAt: result.syncedAt || currentWibTime() };
     const isLive = result.source === 'tradingview';
+    state.meta = { ...state.meta, ...(result.meta || {}), syncedAt: isLive ? (result.syncedAt || currentWibTime()) : '' };
     const quoteCount = result.coverage?.quoteAvailable ?? result.quoteCount ?? 0;
     const rowCount = result.coverage?.universe ?? result.rows ?? state.stocks.length;
     setStatus(
@@ -461,7 +461,9 @@ function renderDataNotice(quoteCount, rosterCount) {
   const quoteText = `${numberFormat(0).format(quoteCount)}/${numberFormat(0).format(rosterCount)} emiten punya quote; ${numberFormat(0).format(unavailable)} sisanya ditandai \"Tidak ada quote\" (umumnya suspen/delisting).`;
   const candidateText = candidateReady ? '' : ' Flag Kandidat belum aktif.';
   const note = $('#data-note-text');
-  if (note) note.textContent = `${rosterText} ${quoteText}${candidateText}`;
+  const staleText = state.mode === 'live' ? '' : '⚠ Data live gagal dimuat: tabel memakai snapshot lama, harga bukan real-time. ';
+  const delayText = state.mode === 'live' ? ' Harga dari TradingView bisa tertunda; cocokkan dengan aplikasi sekuritas sebelum eksekusi.' : '';
+  if (note) note.textContent = `${staleText}${rosterText} ${quoteText}${candidateText}${delayText}`;
 }
 
 function marketShortName(label) {
@@ -502,9 +504,10 @@ function updateTimestamp() {
   const synced = state.meta?.syncedAt;
   const snapshot = state.meta?.snapshotAt;
   const marketUpdated = state.market?.diperbarui;
-  const display = synced || snapshot || marketUpdated || currentWibTime();
-  $('#data-time').textContent = display;
-  $('#last-refresh-inline').textContent = `Sinkron ${display}`;
+  const live = state.mode === 'live';
+  const display = live ? (synced || currentWibTime()) : (snapshot || marketUpdated || '—');
+  $('#data-time').textContent = live ? display : `SNAPSHOT LAMA · ${display}`;
+  $('#last-refresh-inline').textContent = live ? `Live · diambil ${display}` : `⚠ Snapshot lama · ${display}`;
 }
 
 function renderAll() {
@@ -766,6 +769,22 @@ function bindEvents() {
   });
 }
 
+function isMarketHoursWib() {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Jakarta', weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false,
+  }).formatToParts(new Date());
+  const get = (type) => parts.find((part) => part.type === type)?.value;
+  if (['Sat', 'Sun'].includes(get('weekday'))) return false;
+  const minutes = (Number(get('hour')) % 24) * 60 + Number(get('minute'));
+  return minutes >= 8 * 60 + 55 && minutes <= 16 * 60 + 10; // 08:55-16:10 WIB
+}
+
+function startAutoRefresh() {
+  // Segarkan tiap 60 detik selama jam bursa, dan langsung saat tab dibuka kembali.
+  setInterval(() => { if (!document.hidden && isMarketHoursWib()) syncData(false); }, 60000);
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) syncData(false); });
+}
+
 async function init() {
   bindEvents();
   $('#today-label').textContent = currentWibDate();
@@ -777,6 +796,7 @@ async function init() {
     elements.rows.innerHTML = '<tr><td colspan="11" class="loading-cell">Memuat data screener…</td></tr>';
   }
   await syncData(false);
+  startAutoRefresh();
   if (state.stocks.length) renderAll();
 }
 

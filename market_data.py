@@ -575,7 +575,8 @@ def build_payload(force: bool = False) -> dict:
 
     meta = dict(fallback_meta or {})
     meta.update({
-        "syncedAt": synced_at,
+        "syncedAt": synced_at if live_quotes else "",
+        "requestedAt": synced_at,
         "snapshotAt": fallback_meta.get("snapshotAt", "") if isinstance(fallback_meta, dict) else "",
         "quoteSource": quote_source,
         "marketSource": "Google Sheets · APP_SENTIMEN" if live_market else "snapshot JSON",
@@ -605,7 +606,8 @@ def build_payload(force: bool = False) -> dict:
         "source": source,
         "quoteSource": quote_source,
         "marketSource": meta["marketSource"],
-        "syncedAt": synced_at,
+        "syncedAt": synced_at if live_quotes else None,
+        "requestedAt": synced_at,
         "rows": roster_count,
         "quoteCount": quote_count,
         "coverage": {
