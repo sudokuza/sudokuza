@@ -1,0 +1,154 @@
+{
+  "fase": "sesi",
+  "diperbarui": "29 Sep 2026 10:29 WIB",
+  "sentimen": {
+    "skor": -0.83,
+    "arah": "NEGATIF",
+    "ihsg": {
+      "key": "IHSG",
+      "label": "IHSG",
+      "grup": "IHSG",
+      "harga": 6057.24,
+      "chgPct": -1.47,
+      "waktu": "29 Sep 10:19",
+      "status": "ok",
+      "bobot": 0,
+      "dipakai": false,
+      "kontribusi": null
+    },
+    "rupiah": {
+      "key": "USDIDR",
+      "label": "USD/IDR",
+      "grup": "KURS",
+      "harga": 18014,
+      "chgPct": null,
+      "waktu": "",
+      "status": "ok",
+      "bobot": 0,
+      "dipakai": false,
+      "kontribusi": null
+    },
+    "item": [
+      {
+        "key": "EIDO",
+        "label": "EIDO (ETF Indonesia di AS)",
+        "grup": "AS",
+        "harga": 11.87,
+        "chgPct": -1.08,
+        "waktu": "28 Sep 20:00",
+        "status": "ok",
+        "bobot": 3,
+        "dipakai": true,
+        "kontribusi": -1.08
+      },
+      {
+        "key": "SP500",
+        "label": "S&P 500",
+        "grup": "AS",
+        "harga": 7683.69,
+        "chgPct": -0.77,
+        "waktu": "28 Sep 16:36",
+        "status": "ok",
+        "bobot": 1.5,
+        "dipakai": true,
+        "kontribusi": -0.77
+      },
+      {
+        "key": "NASDAQ",
+        "label": "Nasdaq",
+        "grup": "AS",
+        "harga": 26820.38,
+        "chgPct": -0.92,
+        "waktu": "28 Sep 17:15",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -0.92
+      },
+      {
+        "key": "DOW",
+        "label": "Dow Jones",
+        "grup": "AS",
+        "harga": 51481.51,
+        "chgPct": -0.67,
+        "waktu": "28 Sep 16:36",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -0.67
+      },
+      {
+        "key": "VIX",
+        "label": "VIX (indeks ketakutan)",
+        "grup": "AS",
+        "harga": 16.07,
+        "chgPct": 8.07,
+        "waktu": "28 Sep 15:15",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -1.61
+      },
+      {
+        "key": "NIKKEI",
+        "label": "Nikkei 225",
+        "grup": "ASIA",
+        "harga": 65307,
+        "chgPct": -0.87,
+        "waktu": "29 Sep 11:35",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -0.87
+      },
+      {
+        "key": "KOSPI",
+        "label": "KOSPI",
+        "grup": "ASIA",
+        "harga": 6844.08,
+        "chgPct": -0.66,
+        "waktu": "29 Sep 12:09",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -0.66
+      },
+      {
+        "key": "HSI",
+        "label": "Hang Seng",
+        "grup": "ASIA",
+        "harga": 24512.74,
+        "chgPct": -0.53,
+        "waktu": "29 Sep 11:29",
+        "status": "ok",
+        "bobot": 1,
+        "dipakai": true,
+        "kontribusi": -0.53
+      },
+      {
+        "key": "BRENT",
+        "label": "Minyak Brent (ETF BNO)",
+        "grup": "KOMODITAS",
+        "harga": 60.33,
+        "chgPct": 1.14,
+        "waktu": "28 Sep 20:00",
+        "status": "ok",
+        "bobot": 0.5,
+        "dipakai": true,
+        "kontribusi": 1.14
+      },
+      {
+        "key": "EMAS",
+        "label": "Emas (ETF GLD)",
+        "grup": "KOMODITAS",
+        "harga": 377.91,
+        "chgPct": -3.94,
+        "waktu": "28 Sep 20:00",
+        "status": "ok",
+        "bobot": 0,
+        "dipakai": false,
+        "kontribusi": null
+      }
+    ]
+  }
+}

@@ -1,0 +1,4836 @@
+{
+  "count": 962,
+  "asOf": "2026-09-29",
+  "verifiedAgainstIDX": false,
+  "rosterSource": "KSEI ownership CSV dated 2026-02-27 + seven 2026 IPO listings",
+  "verificationNote": "Provisional roster only. The count matches IDX's reported 962 records, but the codes have not been reconciled one-by-one against the official IDX list.",
+  "sourceUrl": "https://raw.githubusercontent.com/aryakdaniswara/idx-stock-ownership/main/data/kepemilikan_saham_20260227.csv",
+  "ipoListings": [
+    "WBSA",
+    "JELI",
+    "JECX",
+    "BACH",
+    "EMMI",
+    "PRDL",
+    "RANS"
+  ],
+  "issuers": [
+    {
+      "ticker": "AADI",
+      "name": "Adaro Andalan Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AALI",
+      "name": "Astra Agro Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ABBA",
+      "name": "Mahaka Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ABDA",
+      "name": "Asuransi Bina Dana Arta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ABMM",
+      "name": "Abm Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ACES",
+      "name": "Aspirasi Hidup Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ACRO",
+      "name": "Samcro Hyosung Adilestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ACST",
+      "name": "Acset Indonusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADCP",
+      "name": "Adhi Commuter Properti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADES",
+      "name": "Akasha Wira International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADHI",
+      "name": "Adhi Karya (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADMF",
+      "name": "Adira Dinamika Multi Finance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADMG",
+      "name": "Polychem Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADMR",
+      "name": "Alamtri Minerals Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ADRO",
+      "name": "Alamtri Resources Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AEGS",
+      "name": "Anugerah Spareparts Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AGAR",
+      "name": "Asia Sejahtera Mina Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AGII",
+      "name": "Samator Indo Gas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AGRO",
+      "name": "Bank Raya Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AGRS",
+      "name": "Bank Ibk Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AHAP",
+      "name": "Asuransi Harta Aman Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AIMS",
+      "name": "Artha Mahiya Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AISA",
+      "name": "Fks Food Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AKKU",
+      "name": "Anugerah Kagum Karya Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AKPI",
+      "name": "Argha Karya Prima Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AKRA",
+      "name": "Akr Corporindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AKSI",
+      "name": "Mineral Sumberdaya Mandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ALDO",
+      "name": "Alkindo Naratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ALII",
+      "name": "Ancara Logistics Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ALKA",
+      "name": "Alakasa Industrindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ALMI",
+      "name": "Alumindo Light Metal Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ALTO",
+      "name": "Tri Banyan Tirta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMAG",
+      "name": "Asuransi Multi Artha Guna Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMAN",
+      "name": "Makmur Berkah Amanda Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMAR",
+      "name": "Bank Amar Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMFG",
+      "name": "Asahimas Flat Glass Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMIN",
+      "name": "Ateliers Mecaniques D`Indonesie Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMMN",
+      "name": "Amman Mineral Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMMS",
+      "name": "Agung Menjangan Mas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMOR",
+      "name": "Ashmore Asset Management Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AMRT",
+      "name": "Sumber Alfaria Trijaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ANDI",
+      "name": "Andira Agro Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ANJT",
+      "name": "Austindo Nusantara Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ANTM",
+      "name": "Aneka Tambang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "APEX",
+      "name": "Apexindo Pratama Duta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "APIC",
+      "name": "Pacific Strategic Financial Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "APII",
+      "name": "Arita Prima Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "APLI",
+      "name": "Asiaplast Industries Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "APLN",
+      "name": "Agung Podomoro Land Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARCI",
+      "name": "Archi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AREA",
+      "name": "Dunia Virtual Online Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARGO",
+      "name": "Argo Pantes Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARII",
+      "name": "Atlas Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARKA",
+      "name": "Arkha Jayanti Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARKO",
+      "name": "Arkora Hydro Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARMY",
+      "name": "Armidian Karyatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARNA",
+      "name": "Arwana Citramulia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARTA",
+      "name": "Arthavest Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARTI",
+      "name": "Ratu Prabu Energi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ARTO",
+      "name": "Bank Jago Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASBI",
+      "name": "Asuransi Bintang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASDM",
+      "name": "Asuransi Dayin Mitra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASGR",
+      "name": "Astra Graphia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASHA",
+      "name": "Cilacap Samudera Fishing Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASII",
+      "name": "Astra International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASJT",
+      "name": "Asuransi Jasa Tania Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASLC",
+      "name": "Autopedia Sukses Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASLI",
+      "name": "Asri Karya Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASMI",
+      "name": "Asuransi Maximus Graha Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASPI",
+      "name": "Andalan Sakti Primaindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASPR",
+      "name": "Asia Pramulia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASRI",
+      "name": "Alam Sutera Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASRM",
+      "name": "Asuransi Ramayana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ASSA",
+      "name": "Adi Sarana Armada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ATAP",
+      "name": "Trimitra Prawara Goldland Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ATIC",
+      "name": "Anabatic Technologies Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ATLA",
+      "name": "Atlantis Subsea Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AUTO",
+      "name": "Astra Otoparts Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AVIA",
+      "name": "Avia Avian Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AWAN",
+      "name": "Era Digital Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AXIO",
+      "name": "Tera Data Indonusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AYAM",
+      "name": "Janu Putra Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "AYLS",
+      "name": "Agro Yasa Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BABP",
+      "name": "Bank Mnc Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BABY",
+      "name": "Multitrend Indo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BACA",
+      "name": "Bank Capital Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BACH",
+      "name": "PT Bach Multi Global Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-08"
+    },
+    {
+      "ticker": "BAIK",
+      "name": "Bersama Mencapai Puncak Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BAJA",
+      "name": "Saranacentral Bajatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BALI",
+      "name": "Bali Towerindo Sentra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BANK",
+      "name": "Bank Aladin Syariah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BAPA",
+      "name": "Bekasi Asri Pemula Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BAPI",
+      "name": "Bhakti Agung Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BATA",
+      "name": "Sepatu Bata Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BATR",
+      "name": "Benteng Api Technic Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BAUT",
+      "name": "Mitra Angkasa Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BAYU",
+      "name": "Bayu Buana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBCA",
+      "name": "Bank Central Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBHI",
+      "name": "Allo Bank Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBKP",
+      "name": "Bank Kb Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBLD",
+      "name": "Buana Finance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBMD",
+      "name": "Bank Mestika Dharma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBNI",
+      "name": "Bank Negara Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBRI",
+      "name": "Bank Rakyat Indonesia (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBRM",
+      "name": "Pelayaran Nasional Bina Buana Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBSI",
+      "name": "Krom Bank Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBSS",
+      "name": "Bumi Benowo Sukses Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBTN",
+      "name": "Bank Tabungan Negara (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BBYB",
+      "name": "Bank Neo Commerce Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BCAP",
+      "name": "Mnc Kapital Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BCIC",
+      "name": "Bank Jtrust Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BCIP",
+      "name": "Bumi Citra Permai Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BDKR",
+      "name": "Berdikari Pondasi Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BDMN",
+      "name": "Bank Danamon Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BEBS",
+      "name": "Berkah Beton Sadaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BEEF",
+      "name": "Estika Tata Tiara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BEER",
+      "name": "Jobubu Jarum Minahasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BEKS",
+      "name": "Bank Pembangunan Daerah Banten Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BELI",
+      "name": "Global Digital Niaga Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BELL",
+      "name": "Trisula Textile Industries Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BESS",
+      "name": "Batulicin Nusantara Maritim Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BEST",
+      "name": "Bekasi Fajar Industrial Estate Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BFIN",
+      "name": "Bfi Finance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BGTG",
+      "name": "Bank Ganesha Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BHAT",
+      "name": "Bhakti Multi Artha Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BHIT",
+      "name": "Mnc Asia Holding Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIKA",
+      "name": "Binakarya Jaya Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIKE",
+      "name": "Sepeda Bersama Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIMA",
+      "name": "Primarindo Asia Infrastructure Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BINA",
+      "name": "Bank Ina Perdana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BINO",
+      "name": "Perma Plasindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIPI",
+      "name": "Astrindo Nusantara Infrastruktur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIPP",
+      "name": "Bhuwanatala Indah Permai Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BIRD",
+      "name": "Blue Bird Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BISI",
+      "name": "Bisi International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BJBR",
+      "name": "Bank Jabar Banten Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BJTM",
+      "name": "Bank Pembangunan Daerah Jawa Timur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BKDP",
+      "name": "Bukit Darmo Property Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BKSL",
+      "name": "Sentul City Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BKSW",
+      "name": "Bank Qnb Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BLES",
+      "name": "Superior Prima Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BLOG",
+      "name": "Trimitra Trans Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BLTA",
+      "name": "Berlian Laju Tanker Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BLTZ",
+      "name": "Graha Layar Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BLUE",
+      "name": "Berkah Prima Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMAS",
+      "name": "Bank Maspion Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMBL",
+      "name": "Lavender Bina Cendikia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMHS",
+      "name": "Bundamedik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMRI",
+      "name": "Bank Mandiri ( Persero ) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMSR",
+      "name": "Bintang Mitra Semestaraya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BMTR",
+      "name": "Global Mediacom Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BNBA",
+      "name": "Bank Bumi Arta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BNBR",
+      "name": "Bakrie And Brothers Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BNGA",
+      "name": "Bank Cimb Niaga Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BNII",
+      "name": "Bank Maybank Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BNLI",
+      "name": "Bank Permata Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOAT",
+      "name": "Newport Marine Services Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOBA",
+      "name": "Formosa Ingredient Factory Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOGA",
+      "name": "Apollo Global Interactive Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOLA",
+      "name": "Bali Bintang Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOLT",
+      "name": "Garuda Metalindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BOSS",
+      "name": "Borneo Olah Sarana Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BPFI",
+      "name": "Woori Finance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BPII",
+      "name": "Batavia Prosperindo Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BPTR",
+      "name": "Batavia Prosperindo Trans Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRAM",
+      "name": "Indo Kordsa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BREN",
+      "name": "Barito Renewables Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRIS",
+      "name": "Bank Syariah Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRMS",
+      "name": "Bumi Resources Minerals Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRNA",
+      "name": "Berlina Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRPT",
+      "name": "Barito Pacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BRRC",
+      "name": "Raja Roti Cemerlang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSBK",
+      "name": "Wulandari Bangun Laksana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSDE",
+      "name": "Bumi Serpong Damai Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSIM",
+      "name": "Bank Sinar Mas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSML",
+      "name": "Bintang Samudera Mandiri Lines Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSSR",
+      "name": "Baramulti Suksessarana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BSWD",
+      "name": "Bank Of India Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BTEK",
+      "name": "Bumi Teknokultura Unggul Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BTEL",
+      "name": "Bakrie Telecom Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BTON",
+      "name": "Betonjaya Manunggal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BTPN",
+      "name": "Bank Smbc Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BTPS",
+      "name": "Bank Btpn Syariah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUAH",
+      "name": "Segar Kumala Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUDI",
+      "name": "Budi Starch & Sweetener Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUKA",
+      "name": "Bukalapak.Com Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUKK",
+      "name": "Bukaka Teknik Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BULL",
+      "name": "Buana Lintas Lautan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUMI",
+      "name": "Bumi Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BUVA",
+      "name": "Bukit Uluwatu Villa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BVIC",
+      "name": "Bank Victoria International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BWPT",
+      "name": "Eagle High Plantations, Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "BYAN",
+      "name": "Bayan Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CAKK",
+      "name": "Cahayaputra Asa Keramik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CAMP",
+      "name": "Campina Ice Cream Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CANI",
+      "name": "Capitol Nusantara Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CARE",
+      "name": "Metro Healthcare Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CARS",
+      "name": "Industri Dan Perdagangan Bintraco Dharm",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CASA",
+      "name": "Capital Financial Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CASH",
+      "name": "Cashlez Worldwide Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CASS",
+      "name": "Cahaya Aero Services Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CBDK",
+      "name": "Bangun Kosambi Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CBMF",
+      "name": "Cahaya Bintang Medan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CBPE",
+      "name": "Citra Buana Prasida Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CBRE",
+      "name": "Cakra Buana Resources Energi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CBUT",
+      "name": "Citra Borneo Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CCSI",
+      "name": "Communication Cable Systems Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CDIA",
+      "name": "Chandra Daya Investasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CEKA",
+      "name": "Wilmar Cahaya Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CENT",
+      "name": "Centratama Telekomunikasi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CFIN",
+      "name": "Clipan Finance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CGAS",
+      "name": "Citra Nusantara Gemilang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CHEK",
+      "name": "Diastika Biotekindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CHEM",
+      "name": "Chemstar Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CHIP",
+      "name": "Pelita Teknologi Global Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CINT",
+      "name": "Chitose Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CITA",
+      "name": "Cita Mineral Investindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CITY",
+      "name": "Natura City Developments Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CLAY",
+      "name": "Citra Putra Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CLEO",
+      "name": "Sariguna Primatirta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CLPI",
+      "name": "Colorpak Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CMNP",
+      "name": "Citra Marga Nusaphala Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CMNT",
+      "name": "Cemindo Gemilang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CMPP",
+      "name": "Airasia Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CMRY",
+      "name": "Cisarua Mountain Dairy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CNKO",
+      "name": "Exploitasi Energi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CNMA",
+      "name": "Nusantara Sejahtera Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CNTX",
+      "name": "CENTEX Tbk SERI A PREFEREN",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "COAL",
+      "name": "Black Diamond Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "COCO",
+      "name": "Wahana Interfood Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Indokripto Koin Semesta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "COWL",
+      "name": "Cowell Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CPIN",
+      "name": "Charoen Pokphand Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CPRI",
+      "name": "Capri Nusa Satu Properti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CPRO",
+      "name": "Central Proteinaprima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CRAB",
+      "name": "Toba Surimi Industries Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CRSN",
+      "name": "Carsurin Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CSAP",
+      "name": "Catur Sentosa Adiprana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CSIS",
+      "name": "Cahayasakti Investindo Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CSMI",
+      "name": "Cipta Selera Murni Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CSRA",
+      "name": "Cisadane Sawit Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CTBN",
+      "name": "Citra Tubindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CTRA",
+      "name": "Ciputra Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CTTH",
+      "name": "Citatah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CUAN",
+      "name": "Petrindo Jaya Kreasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "CYBR",
+      "name": "Itsec Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DAAZ",
+      "name": "Daaz Bara Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DADA",
+      "name": "Diamond Citra Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DART",
+      "name": "Duta Anggada Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DATA",
+      "name": "Remala Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DAYA",
+      "name": "Duta Intidaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DCII",
+      "name": "Dci Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DEAL",
+      "name": "Dewata Freightinternational Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DEFI",
+      "name": "Danasupra Erapacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DEPO",
+      "name": "Caturkarda Depo Bangunan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DEWA",
+      "name": "Darma Henwa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DEWI",
+      "name": "Dewi Shri Farmindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DFAM",
+      "name": "Dafam Property Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DGIK",
+      "name": "Nusa Konstruksi Enjiniring Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DGNS",
+      "name": "Diagnos Laboratorium Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DGWG",
+      "name": "Delta Giri Wacana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DIGI",
+      "name": "Arkadia Digital Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DILD",
+      "name": "Intiland Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DIVA",
+      "name": "Distribusi Voucher Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DKFT",
+      "name": "Central Omega Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DKHH",
+      "name": "Cipta Sarana Medika Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DLTA",
+      "name": "Delta Djakarta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DMAS",
+      "name": "Puradelta Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DMMX",
+      "name": "Digital Mediatama Maxima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DMND",
+      "name": "Diamond Food Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DNAR",
+      "name": "Bank Oke Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DNET",
+      "name": "Indoritel Makmur Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DOID",
+      "name": "Buma Internasional Grup Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DOOH",
+      "name": "Era Media Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DOSS",
+      "name": "Global Sukses Digital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DPNS",
+      "name": "Duta Pertiwi Nusantara",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DPUM",
+      "name": "Dua Putra Utama Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DRMA",
+      "name": "Dharma Polimetal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DSFI",
+      "name": "Dharma Samudera Fishing Industries Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DSNG",
+      "name": "Dharma Satya Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DSSA",
+      "name": "Dian Swastatika Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DUCK",
+      "name": "Jaya Bersama Indo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DUTI",
+      "name": "Duta Pertiwi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DVLA",
+      "name": "Darya - Varia Laboratoria Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DWGL",
+      "name": "Dwi Guna Laksana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "DYAN",
+      "name": "Dyandra Media International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EAST",
+      "name": "Eastparc Hotel Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ECII",
+      "name": "Electronic City Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EDGE",
+      "name": "Indointernet Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EKAD",
+      "name": "Ekadharma International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ELIT",
+      "name": "Data Sinergitama Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ELPI",
+      "name": "Pelayaran Nasional Ekalya Purnamasari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ELSA",
+      "name": "Elnusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ELTY",
+      "name": "Bakrieland Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EMAS",
+      "name": "Merdeka Gold Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EMDE",
+      "name": "Megapolitan Developments Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EMMI",
+      "name": "PT Esa Medika Mandiri Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-08"
+    },
+    {
+      "ticker": "EMTK",
+      "name": "Elang Mahkota Teknologi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ENAK",
+      "name": "Champ Resto Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ENRG",
+      "name": "Energi Mega Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ENVY",
+      "name": "Envy Technologies Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ENZO",
+      "name": "Morenzo Abadi Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EPAC",
+      "name": "Megalestari Epack Sentosaraya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EPMT",
+      "name": "Enseval Putera Megatrading Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ERAA",
+      "name": "Erajaya Swasembada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ERAL",
+      "name": "Sinar Eka Selaras Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ERTX",
+      "name": "Eratex Djaja Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ESIP",
+      "name": "Sinergi Inti Plastindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ESSA",
+      "name": "Essa Industries Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ESTA",
+      "name": "Esta Multi Usaha Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ESTI",
+      "name": "Ever Shine Textile Industry",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ETWA",
+      "name": "Eterindo Wahanatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EURO",
+      "name": "Estee Gold Feet Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "EXCL",
+      "name": "Xlsmart Telecom Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FAPA",
+      "name": "Fap Agri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FAST",
+      "name": "Fast Food Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FASW",
+      "name": "Fajar Surya Wisesa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FILM",
+      "name": "Md Entertainment Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FIMP",
+      "name": "Fimperkasa Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FIRE",
+      "name": "Alfa Energi Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FISH",
+      "name": "Fks Multi Agro Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FITT",
+      "name": "Hotel Fitra International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FLMC",
+      "name": "Falmaco Nonwoven Industri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FMII",
+      "name": "Fortune Mate Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FOLK",
+      "name": "Multi Garam Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FOOD",
+      "name": "Sentra Food Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FORE",
+      "name": "Fore Kopi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FORU",
+      "name": "Fortune Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FPNI",
+      "name": "Lotte Chemical Titan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FUJI",
+      "name": "Fuji Finance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FUTR",
+      "name": "Futura Energi Global Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "FWCT",
+      "name": "Wijaya Cahaya Timber Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GAMA",
+      "name": "Aksara Global Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GDST",
+      "name": "Gunawan Dianjaya Steel Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GDYR",
+      "name": "Goodyear Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GEMA",
+      "name": "Gema Grahasarana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GEMS",
+      "name": "Golden Energy Mines Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GGRM",
+      "name": "Gudang Garam Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GGRP",
+      "name": "Gunung Raja Paksi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GHON",
+      "name": "Gihon Telekomunikasi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GIAA",
+      "name": "Garuda Indonesia (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GJTL",
+      "name": "Gajah Tunggal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GLOB",
+      "name": "Globe Kita Terang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GLVA",
+      "name": "Galva Technologies Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GMFI",
+      "name": "Garuda Maintenance Facility Aero Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GMTD",
+      "name": "Gowa Makassar Tourism Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GOLD",
+      "name": "VISI TELEKOMUNIKASI INFRASTRUKTUR Tbk, PT",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GOLF",
+      "name": "Intra Golflink Resorts Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GOLL",
+      "name": "Golden Plantation Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GOOD",
+      "name": "Garudafood Putra Putri Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GOTO",
+      "name": "Mvs Goto Gojek Tokopedia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GPRA",
+      "name": "Perdana Gapuraprima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GPSO",
+      "name": "Geoprima Solusi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GRIA",
+      "name": "Ingria Pratama Capitalindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GRPH",
+      "name": "Griptha Putra Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GRPM",
+      "name": "Graha Prima Mentari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GSMF",
+      "name": "Equity Development Investment Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GTBO",
+      "name": "Garda Tujuh Buana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GTRA",
+      "name": "Grahaprima Suksesmandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GTSI",
+      "name": "Gts Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GULA",
+      "name": "Aman Agrindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GUNA",
+      "name": "Gunanusa Eramandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GWSA",
+      "name": "Greenwood Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "GZCO",
+      "name": "Gozco Plantations Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HADE",
+      "name": "Himalaya Energi Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HAIS",
+      "name": "Hasnur Internasional Shipping Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HAJJ",
+      "name": "Arsy Buana Travelindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HALO",
+      "name": "Haloni Jane Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HATM",
+      "name": "Habco Trans Maritima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HBAT",
+      "name": "Minahasa Membangun Hebat Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HDFA",
+      "name": "Radana Bhaskara Finance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HDIT",
+      "name": "Hensel Davest Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HEAL",
+      "name": "Medikaloka Hermina Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HELI",
+      "name": "Jaya Trishindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HERO",
+      "name": "Dfi Retail Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HEXA",
+      "name": "Hexindo Adiperkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HGII",
+      "name": "Hero Global Investment Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HILL",
+      "name": "Hillcon Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HITS",
+      "name": "Humpuss Intermoda Transportasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HKMU",
+      "name": "Hk Metals Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HMSP",
+      "name": "Hanjaya Mandala Sampoerna Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HOKI",
+      "name": "Buyung Poetra Sembada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HOME",
+      "name": "Hotel Mandarine Regency Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HOMI",
+      "name": "Grand House Mulia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HOPE",
+      "name": "Harapan Duta Pertiwi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HOTL",
+      "name": "Saraswati Griya Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HRME",
+      "name": "Menteng Heritage Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HRTA",
+      "name": "Hartadinata Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HRUM",
+      "name": "Harum Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HUMI",
+      "name": "Humpuss Maritim Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "HYGN",
+      "name": "Ecocare Indo Pasifik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IATA",
+      "name": "Mnc Energy Investments Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IBFN",
+      "name": "Intan Baru Prana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IBOS",
+      "name": "Indo Boga Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IBST",
+      "name": "Inti Bangun Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ICBP",
+      "name": "Indofood Cbp Sukses Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ICON",
+      "name": "Island Concepts Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IDEA",
+      "name": "Idea Indonesia Akademi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IDPR",
+      "name": "Indonesia Pondasi Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IFII",
+      "name": "Indonesia Fibreboard Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IFSH",
+      "name": "Ifishdeco Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IGAR",
+      "name": "Champion Pacific Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IIKP",
+      "name": "Inti Agri Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IKAI",
+      "name": "Intikeramik Alamasri Industri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IKAN",
+      "name": "Era Mandiri Cemerlang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IKBI",
+      "name": "Sumi Indo Kabel Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IKPM",
+      "name": "Ikapharmindo Putramas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IMAS",
+      "name": "Indomobil Sukses Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IMJS",
+      "name": "Indomobil Multi Jasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IMPC",
+      "name": "Impack Pratama Industri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INAF",
+      "name": "Indofarma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INAI",
+      "name": "Indal Aluminium Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INCF",
+      "name": "Indo Komoditi Korpora Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INCI",
+      "name": "Intanwijaya Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INCO",
+      "name": "Vale Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDF",
+      "name": "Indofood Sukses Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDO",
+      "name": "Royalindo Investa Wijaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDR",
+      "name": "Indo-Rama Synthetics Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDS",
+      "name": "Indospring Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDX",
+      "name": "Tanah Laut Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INDY",
+      "name": "Indika Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INET",
+      "name": "Sinergi Inti Andalan Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INKP",
+      "name": "Indah Kiat Pulp And Paper Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INOV",
+      "name": "Inocycle Technology Group Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INPC",
+      "name": "Bank Artha Graha Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INPP",
+      "name": "Indonesian Paradise Property Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INPS",
+      "name": "Indah Prakasa Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INRU",
+      "name": "Toba Pulp Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INTA",
+      "name": "Intraco Penta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INTD",
+      "name": "Inter Delta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "INTP",
+      "name": "Indocement Tunggal Prakarsa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IOTF",
+      "name": "Sumber Sinergi Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPAC",
+      "name": "Era Graharealty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPCC",
+      "name": "Indonesia Kendaraan Terminal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPCM",
+      "name": "Jasa Armada Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPOL",
+      "name": "Indopoly Swakarsa Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPPE",
+      "name": "Indo Pureco Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IPTV",
+      "name": "Mnc Vision Networks Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IRRA",
+      "name": "Itama Ranoraya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "IRSX",
+      "name": "Folago Global Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ISAP",
+      "name": "Isra Presisi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ISAT",
+      "name": "Indosat Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ISEA",
+      "name": "Indo American Seafoods Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ISSP",
+      "name": "Steel Pipe Industry Of Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ITIC",
+      "name": "Indonesian Tobacco Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ITMA",
+      "name": "Sumber Energi Andalan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ITMG",
+      "name": "Indo Tambangraya Megah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JARR",
+      "name": "Jhonlin Agro Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JAST",
+      "name": "Jasnita Telekomindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JATI",
+      "name": "Informasi Teknologi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JAWA",
+      "name": "Jaya Agra Wattie Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JAYA",
+      "name": "Armada Berjaya Trans Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JECC",
+      "name": "Jembo Cable Company Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JECX",
+      "name": "PT Nitrasanata Dharma Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-07"
+    },
+    {
+      "ticker": "JELI",
+      "name": "PT Niramas Utama Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-07"
+    },
+    {
+      "ticker": "JGLE",
+      "name": "Graha Andrasentra Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JIHD",
+      "name": "Jakarta International Hotels & Developmen",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JKON",
+      "name": "Jaya Konstruksi Manggala Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JMAS",
+      "name": "Asuransi Jiwa Syariah Jasa Mitra Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JPFA",
+      "name": "Japfa Comfeed Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JRPT",
+      "name": "Jaya Real Property Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JSKY",
+      "name": "Sky Energy Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JSMR",
+      "name": "Jasa Marga (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JSPT",
+      "name": "Jakarta Setiabudi Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "JTPE",
+      "name": "Jasuindo Tiga Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KAEF",
+      "name": "Kimia Farma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KAQI",
+      "name": "Jantra Grupo Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KARW",
+      "name": "Meratus Jasa Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KAYU",
+      "name": "Darmi Bersaudara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KBAG",
+      "name": "Karya Bersama Anugerah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KBLI",
+      "name": "KMI Wire and Cable Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KBLM",
+      "name": "Kabelindo Murni Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KBLV",
+      "name": "First Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KBRI",
+      "name": "Kertas Basuki Rachmat Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KDSI",
+      "name": "Kedawung Setia Industrial Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KDTN",
+      "name": "Puri Sentul Permai Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KEEN",
+      "name": "Kencana Energi Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KEJU",
+      "name": "Mulia Boga Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KETR",
+      "name": "Ketrosden Triasmitra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KIAS",
+      "name": "Keramika Indonesia Assosiasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KICI",
+      "name": "Kedaung Indah Can Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KIJA",
+      "name": "Kawasan Industri Jababeka Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KING",
+      "name": "Hoffmen Cleanindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KINO",
+      "name": "Kino Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KIOS",
+      "name": "Kioson Komersial Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KJEN",
+      "name": "Krida Jaringan Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KKES",
+      "name": "Kusuma Kemindo Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KKGI",
+      "name": "Resource Alam Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KLAS",
+      "name": "Pelayaran Kurnia Lautan Semesta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KLBF",
+      "name": "Kalbe Farma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KLIN",
+      "name": "Klinko Karya Imaji Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KMDS",
+      "name": "Kurniamitra Duta Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KMTR",
+      "name": "Kirana Megatara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOBX",
+      "name": "Kobexindo Tractors Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOCI",
+      "name": "Kokoh Exa Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOIN",
+      "name": "Kokoh Inti Arebama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOKA",
+      "name": "Koka Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KONI",
+      "name": "Perdana Bangun Pusaka Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOPI",
+      "name": "Mitra Energi Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KOTA",
+      "name": "Dms Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KPIG",
+      "name": "Mnc Land Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KRAS",
+      "name": "Krakatau Steel Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KREN",
+      "name": "Quantum Clovera Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KRYA",
+      "name": "Bangun Karya Perkasa Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KSIX",
+      "name": "Kentanix Supra International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "KUAS",
+      "name": "Ace Oldfields Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LABA",
+      "name": "Green Power Group Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LABS",
+      "name": "Ubc Medical Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LAJU",
+      "name": "Jasa Berdikari Logistics Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LAND",
+      "name": "Trimitra Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LAPD",
+      "name": "Leyand International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LCGP",
+      "name": "Eureka Prima Jakarta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LCKM",
+      "name": "Lck Global Kedaton Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LEAD",
+      "name": "Logindo Samudramakmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LFLO",
+      "name": "Imago Mulia Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LIFE",
+      "name": "Msig Life Insurance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LINK",
+      "name": "Link Net Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LION",
+      "name": "Lion Metal Works Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LIVE",
+      "name": "Homeco Victoria Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LMAS",
+      "name": "Limas Indonesia Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LMAX",
+      "name": "Lupromax Pelumas Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LMPI",
+      "name": "Langgeng Makmur Industri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LMSH",
+      "name": "Lionmesh Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LOPI",
+      "name": "Logisticsplus International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPCK",
+      "name": "Lippo Cikarang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPGI",
+      "name": "Lippo General Insurance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPIN",
+      "name": "Multi Prima Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPKR",
+      "name": "Lippo Karawaci Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPLI",
+      "name": "Star Pacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPPF",
+      "name": "Matahari Department Store Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LPPS",
+      "name": "Lenox Pasifik Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LRNA",
+      "name": "Eka Sari Lorena Transport Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LSIP",
+      "name": "Pp London Sumatra Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LTLS",
+      "name": "Lautan Luas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LUCK",
+      "name": "Sentral Mitra Informatika Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "LUCY",
+      "name": "Lima Dua Lima Tiga Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MABA",
+      "name": "Marga Abhinaya Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAGP",
+      "name": "Multi Agro Gemilang Plantation Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAHA",
+      "name": "Mandiri Herindo Adiperkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAIN",
+      "name": "Malindo Feedmill Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MANG",
+      "name": "Manggung Polahraya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAPA",
+      "name": "Map Aktif Adiperkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAPB",
+      "name": "Map Boga Adiperkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAPI",
+      "name": "Mitra Adiperkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MARI",
+      "name": "Mahaka Radio Integra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MARK",
+      "name": "Mark Dynamics Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MASB",
+      "name": "Bank Multiarta Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAXI",
+      "name": "Maxindo Karya Anugerah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MAYA",
+      "name": "Bank Mayapada Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MBAP",
+      "name": "Mitrabara Adiperdana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MBMA",
+      "name": "Merdeka Battery Materials Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MBSS",
+      "name": "Mitrabahtera Segara Sejati Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MBTO",
+      "name": "Martina Berto Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MCAS",
+      "name": "M Cash Integrasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MCOL",
+      "name": "Prima Andalan Mandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MCOR",
+      "name": "Bank China Construction Bank Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDIA",
+      "name": "Intermedia Capital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDIY",
+      "name": "Daya Intiguna Yasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDKA",
+      "name": "Merdeka Copper Gold Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDKI",
+      "name": "Emdeki Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDLA",
+      "name": "Medela Potentia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDLN",
+      "name": "Modernland Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MDRN",
+      "name": "Modern Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MEDC",
+      "name": "Medco Energi Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MEDS",
+      "name": "Hetzer Medical Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MEGA",
+      "name": "Bank Mega Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MEJA",
+      "name": "Harta Djaya Karya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MENN",
+      "name": "Menn Teknologi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MERI",
+      "name": "Merry Riana Edukasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MERK",
+      "name": "Merck Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "META",
+      "name": "Nusantara Infrastructure Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MFMI",
+      "name": "Multifiling Mitra Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MGLV",
+      "name": "Panca Anugrah Wisesa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MGNA",
+      "name": "Magna Investama Mandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MGRO",
+      "name": "Mahkota Group Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MHKI",
+      "name": "Multi Hanna Kreasindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MICE",
+      "name": "Multi Indocitra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MIDI",
+      "name": "Midi Utama Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MIKA",
+      "name": "Mitra Keluarga Karyasehat Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MINA",
+      "name": "Sanurhasta Mitra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MINE",
+      "name": "Sinar Terang Mandiri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MIRA",
+      "name": "Mitra International Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MITI",
+      "name": "Mitra Investindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MKAP",
+      "name": "Multikarya Asia Pasifik Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MKNT",
+      "name": "Mitra Komunikasi Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MKPI",
+      "name": "Metropolitan Kentjana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MKTR",
+      "name": "Menthobi Karyatama Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MLBI",
+      "name": "Multi Bintang Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MLIA",
+      "name": "Mulia Industrindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MLPL",
+      "name": "Multipolar Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MLPT",
+      "name": "Multipolar Technology Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MMIX",
+      "name": "Multi Medika Internasional Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MMLP",
+      "name": "Mega Manunggal Property Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MNCN",
+      "name": "Media Nusantara Citra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MOLI",
+      "name": "Madusari Murni Indah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MORA",
+      "name": "Mora Telematika Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPIX",
+      "name": "Mitra Pedagang Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPMX",
+      "name": "Mitra Pinasthika Mustika Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPOW",
+      "name": "Megapower Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPPA",
+      "name": "Matahari Putra Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPRO",
+      "name": "Maha Properti Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MPXL",
+      "name": "Mpx Logistics International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MRAT",
+      "name": "Mustika Ratu Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MREI",
+      "name": "Maskapai Reasuransi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MSIE",
+      "name": "Multisarana Intan Eduka Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MSIN",
+      "name": "Mnc Digital Entertainment Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MSJA",
+      "name": "Multi Spunindo Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MSTI",
+      "name": "Mastersystem Infotama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTDL",
+      "name": "Metrodata Electronics Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTEL",
+      "name": "Dayamitra Telekomunikasi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTFN",
+      "name": "Capitalinc Investment Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTLA",
+      "name": "Metropolitan Land Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTMH",
+      "name": "Murni Sadar Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTPS",
+      "name": "Meta Epsi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTRA",
+      "name": "Mitra Pemuda Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTSM",
+      "name": "METRO REALTY Tbk, PT",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MTWI",
+      "name": "Malacca Trust Wuwungan Insurance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MUTU",
+      "name": "Mutuagung Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MYOH",
+      "name": "Samindo Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MYOR",
+      "name": "Mayora Indah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "MYTX",
+      "name": "Asia Pacific Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NAIK",
+      "name": "Adiwarna Anugerah Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NANO",
+      "name": "Nanotech Indonesia Global Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NASA",
+      "name": "Andalan Perkasa Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NASI",
+      "name": "Wahana Inti Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NATO",
+      "name": "Surya Permata Andalan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NAYZ",
+      "name": "Hassana Boga Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NCKL",
+      "name": "Trimegah Bangun Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NELY",
+      "name": "Pelayaran Nelly Dwi Putri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NEST",
+      "name": "Esta Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NETV",
+      "name": "Mdtv Media Technologies Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NFCX",
+      "name": "Nfc Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NICE",
+      "name": "Adhi Kartiko Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NICK",
+      "name": "Charnic Capital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NICL",
+      "name": "Pam Mineral Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NIKL",
+      "name": "Pelat Timah Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NINE",
+      "name": "Techno9 Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NIRO",
+      "name": "City Retail Developments Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NISP",
+      "name": "Bank Ocbc Nisp Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NOBU",
+      "name": "Bank Nationalnobu Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NPGF",
+      "name": "Nusa Palapa Gemilang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NRCA",
+      "name": "Nusa Raya Cipta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NSSS",
+      "name": "Nusantara Sawit Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NTBK",
+      "name": "Nusatama Berkah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NUSA",
+      "name": "Sinergi Megah Internusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "NZIA",
+      "name": "Nusantara Almazia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OASA",
+      "name": "Maharaksa Biru Energi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OBAT",
+      "name": "Brigit Biofarmaka Teknologi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OBMD",
+      "name": "Obm Drilchem Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OCAP",
+      "name": "Onix Capital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OILS",
+      "name": "Indo Oil Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OKAS",
+      "name": "Ancora Indonesia Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OLIV",
+      "name": "Oscar Mitra Sukses Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OMED",
+      "name": "Jayamas Medica Industri Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OMRE",
+      "name": "Indonesia Prima Property Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "OPMS",
+      "name": "Optima Prima Metal Sinergi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PACK",
+      "name": "Abadi Nusantara Hijau Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PADA",
+      "name": "Personel Alih Daya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PADI",
+      "name": "Minna Padi Investama Sekuritas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PALM",
+      "name": "Provident Investasi Bersama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PAMG",
+      "name": "Bima Sakti Pertiwi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PANI",
+      "name": "Pantai Indah Kapuk Dua Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PANR",
+      "name": "Panorama Sentrawisata Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PANS",
+      "name": "Panin Sekuritas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PART",
+      "name": "Cipta Perdana Lancar Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PBID",
+      "name": "Panca Budi Idaman Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PBRX",
+      "name": "Pan Brothers Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PBSA",
+      "name": "Paramita Bangun Sarana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PCAR",
+      "name": "Prima Cakrawala Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PDES",
+      "name": "Destinasi Tirta Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PDPP",
+      "name": "Primadaya Plastisindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PEGE",
+      "name": "Panca Global Kapital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PEHA",
+      "name": "Phapros Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PEVE",
+      "name": "Penta Valent Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PGAS",
+      "name": "Perusahaan Gas Negara (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PGEO",
+      "name": "Pertamina Geothermal Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PGJO",
+      "name": "Bahtera Bumi Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PGLI",
+      "name": "Pembangunan Graha Lestari Indah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PGUN",
+      "name": "Pradiksi Gunatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PICO",
+      "name": "Pelangi Indah Canindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PIPA",
+      "name": "Multi Makmur Lemindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PJAA",
+      "name": "Pembangunan Jaya Ancol Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PJHB",
+      "name": "Pelayaran Jaya Hidup Baru Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PKPK",
+      "name": "Paragon Karya Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PLAN",
+      "name": "Planet Properindo Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PLAS",
+      "name": "Polaris Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PLIN",
+      "name": "Plaza Indonesia Realty Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PMJS",
+      "name": "Putra Mandiri Jembar Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PMMP",
+      "name": "Panca Mitra Multiperdana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PMUI",
+      "name": "Prima Multi Usaha Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNBN",
+      "name": "Bank Pan Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNBS",
+      "name": "Bank Panin Dubai Syariah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNGO",
+      "name": "Pinago Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNIN",
+      "name": "Paninvest Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNLF",
+      "name": "Panin Financial Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PNSE",
+      "name": "Pudjiadi And Sons Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POLA",
+      "name": "Pool Advista Finance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POLI",
+      "name": "Pollux Hotels Group Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POLL",
+      "name": "Pollux Properties Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POLU",
+      "name": "Golden Flower Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POLY",
+      "name": "Asia Pacific Fibers Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POOL",
+      "name": "Pool Advista Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PORT",
+      "name": "Nusantara Pelabuhan Handal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POSA",
+      "name": "Bliss Properti Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "POWR",
+      "name": "Cikarang Listrindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PPGL",
+      "name": "Prima Globalindo Logistik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PPRE",
+      "name": "Pp Presisi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PPRI",
+      "name": "Paperocks Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PPRO",
+      "name": "PP Properti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PRAY",
+      "name": "Famon Awal Bros Sedaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PRDA",
+      "name": "Prodia Widyahusada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PRDL",
+      "name": "PT Prodia Diagnostic Line Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-09"
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Royal Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSAB",
+      "name": "J Resources Asia Pasifik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSAT",
+      "name": "Pancaran Samudera Transport Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSDN",
+      "name": "Prasidha Aneka Niaga Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSGO",
+      "name": "Palma Serasih Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSKT",
+      "name": "Red Planet Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PSSI",
+      "name": "Imc Pelita Logistik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTBA",
+      "name": "Bukit Asam Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTDU",
+      "name": "Djasa Ubersakti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTIS",
+      "name": "Indo Straits Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTMP",
+      "name": "Mitra Pack Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTMR",
+      "name": "Master Print Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTPP",
+      "name": "Pp (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTPS",
+      "name": "Pulau Subur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTPW",
+      "name": "Pratama Widya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTRO",
+      "name": "Petrosea Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTSN",
+      "name": "Sat Nusapersada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PTSP",
+      "name": "Pioneerindo Gourmet International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PUDP",
+      "name": "Pudjiadi Prestige Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PURA",
+      "name": "Putra Rajawali Kencana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PURE",
+      "name": "Trinitan Metals And Minerals Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PURI",
+      "name": "Puri Global Sukses Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PWON",
+      "name": "Pakuwon Jati Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PYFA",
+      "name": "Pyridam Farma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "PZZA",
+      "name": "Sarimelati Kencana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RAAM",
+      "name": "Tripar Multivsion Plus Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RAFI",
+      "name": "Sari Kreasi Boga Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RAJA",
+      "name": "Rukun Raharja Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RALS",
+      "name": "Ramayana Lestari Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RANC",
+      "name": "Supra Boga Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RANS",
+      "name": "PT Rans Entertainment Indonesia Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-07-10"
+    },
+    {
+      "ticker": "RATU",
+      "name": "Raharja Energi Cepu Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RBMS",
+      "name": "Ristia Bintang Mahkotasejati Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RCCC",
+      "name": "Utama Radar Cahaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RDTX",
+      "name": "Roda Vivatex Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "REAL",
+      "name": "Repower Asia Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RELF",
+      "name": "Graha Mitra Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RELI",
+      "name": "Reliance Sekuritas Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RGAS",
+      "name": "Kian Santang Muliatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RICY",
+      "name": "Ricky Putra Globalindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RIGS",
+      "name": "Rig Tenders Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RIMO",
+      "name": "Rimo International Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RISE",
+      "name": "Jaya Sukses Makmur Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RLCO",
+      "name": "Abadi Lestari Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RMKE",
+      "name": "Rmk Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RMKO",
+      "name": "Royaltama Mulia Kontraktorindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ROCK",
+      "name": "Rockfields Properti Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RODA",
+      "name": "Pikko Land Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RONY",
+      "name": "Aracord Nusantara Group Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ROTI",
+      "name": "Nippon Indosari Corpindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RSCH",
+      "name": "Charlie Hospital Semarang Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RSGK",
+      "name": "Kedoya Adyaraya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RUIS",
+      "name": "Radiant Utama Interinsco Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "RUNS",
+      "name": "Global Sukses Solusi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SAFE",
+      "name": "Steady Safe Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SAGE",
+      "name": "Saptausaha Gemilangindah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SAME",
+      "name": "Sarana Meditama Metropolitan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SAMF",
+      "name": "Saraswanti Anugerah Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SAPX",
+      "name": "Satria Antaran Prima Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SATU",
+      "name": "Kota Satu Properti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SBAT",
+      "name": "Sejahtera Bintang Abadi Textile Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SBMA",
+      "name": "Surya Biru Murni Acetylene Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SCCO",
+      "name": "Supreme Cable Manufacturing & Commerce",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SCMA",
+      "name": "Surya Citra Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SCNP",
+      "name": "Selaras Citra Nusantara Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SCPI",
+      "name": "Organon Pharma Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SDMU",
+      "name": "Sidomulyo Selaras Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SDPC",
+      "name": "Millennium Pharmacon International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SDRA",
+      "name": "Bank Woori Saudara Indonesia 1906 Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SEMA",
+      "name": "Semacom Integrated Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SFAN",
+      "name": "Surya Fajar Capital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SGER",
+      "name": "Sumber Global Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SGRO",
+      "name": "Prime Agri Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SHID",
+      "name": "Hotel Sahid Jaya International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SHIP",
+      "name": "Sillo Maritime Perdana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SICO",
+      "name": "Sigma Energy Compressindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SIDO",
+      "name": "Industri Jamu Dan Farmasi Sido Muncul Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SILO",
+      "name": "Siloam International Hospitals Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SIMA",
+      "name": "Siwani Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SIMP",
+      "name": "Salim Ivomas Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SINI",
+      "name": "Singaraja Putra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SIPD",
+      "name": "Sreeya Sewu Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SKBM",
+      "name": "Sekar Bumi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SKLT",
+      "name": "Sekar Laut Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SKRN",
+      "name": "Superkrane Mitra Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SKYB",
+      "name": "Northcliff Citranusa Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SLIS",
+      "name": "Gaya Abadi Sempurna Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMAR",
+      "name": "Sinar Mas Agro Resources And Technology T",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMBR",
+      "name": "Semen Baturaja Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMCB",
+      "name": "Solusi Bangun Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMDM",
+      "name": "Suryamas Dutamakmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMDR",
+      "name": "Samudera Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMGA",
+      "name": "Sumber Mineral Global Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMGR",
+      "name": "Semen Indonesia (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMIL",
+      "name": "Sarana Mitra Luas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMKL",
+      "name": "Satyamitra Kemas Lestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMKM",
+      "name": "Sumber Mas Konstruksi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMLE",
+      "name": "Sinergi Multi Lestarindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMMA",
+      "name": "Sinar Mas Multiartha Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMMT",
+      "name": "Golden Eagle Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMRA",
+      "name": "Summarecon Agung Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMRU",
+      "name": "Smr Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SMSM",
+      "name": "Selamat Sempurna Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SNLK",
+      "name": "Sunter Lakeside Hotel Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOCI",
+      "name": "Soechi Lines Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOFA",
+      "name": "Solusi Environment Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOHO",
+      "name": "Soho Global Health Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOLA",
+      "name": "Xolare Rcr Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SONA",
+      "name": "Sona Topas Tourism Industry Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOSS",
+      "name": "Shield On Service Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOTS",
+      "name": "Satria Mega Kencana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SOUL",
+      "name": "Mitra Tirta Buwana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SPMA",
+      "name": "Suparma Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SPRE",
+      "name": "Soraya Berjaya Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SPTO",
+      "name": "Surya Pertiwi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SQMI",
+      "name": "Wilton Makmur Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SRAJ",
+      "name": "SEJAHTERARAYA ANUGRAHJAYA Tbk, PT",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SRIL",
+      "name": "Sri Rejeki Isman Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SRSN",
+      "name": "Indo Acidatama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SRTG",
+      "name": "Saratoga Investama Sedaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SSIA",
+      "name": "Surya Semesta Internusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SSMS",
+      "name": "Sawit Sumbermas Sarana Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SSTM",
+      "name": "Sunson Textile Manufacturer Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "STAA",
+      "name": "Sumber Tani Agung Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "STAR",
+      "name": "Buana Artha Anugerah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "STRK",
+      "name": "Lovina Beach Brewery Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "STTP",
+      "name": "Siantar Top Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SUGI",
+      "name": "SUGIH ENERGY Tbk, PT",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SULI",
+      "name": "Slj Global Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SUNI",
+      "name": "Sunindo Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SUPA",
+      "name": "Super Bank Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SUPR",
+      "name": "Solusi Tunas Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SURE",
+      "name": "Super Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SURI",
+      "name": "Maja Agung Latexindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SWAT",
+      "name": "Sriwahana Adityakarta Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "SWID",
+      "name": "Saraswanti Indoland Development Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TALF",
+      "name": "Tunas Alfin Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TAMA",
+      "name": "Lancartama Sejati Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TAMU",
+      "name": "Pelayaran Tamarin Samudra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TAPG",
+      "name": "Triputra Agro Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TARA",
+      "name": "Agung Semesta Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TAXI",
+      "name": "Express Transindo Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TAYS",
+      "name": "Jaya Swarasa Agung Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TBIG",
+      "name": "Tower Bersama Infrastructure Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TBLA",
+      "name": "Tunas Baru Lampung Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TBMS",
+      "name": "Tembaga Mulia Semanan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TCID",
+      "name": "Mandom Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TCPI",
+      "name": "Transcoal Pacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TDPM",
+      "name": "Tridomain Performance Materials Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TEBE",
+      "name": "Dana Brata Luhur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TECH",
+      "name": "Indosterling Technomedia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TELE",
+      "name": "Omni Inovasi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TFAS",
+      "name": "Telefast Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TFCO",
+      "name": "Tifico Fiber Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TGKA",
+      "name": "Tigaraksa Satria Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TGRA",
+      "name": "Terregra Asia Energy Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TGUK",
+      "name": "Platinum Wahab Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TIFA",
+      "name": "Kdb Tifa Finance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TINS",
+      "name": "Timah Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TIRA",
+      "name": "Tira Austenite Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TIRT",
+      "name": "Tirta Mahakam Resources Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TKIM",
+      "name": "Pabrik Kertas Tjiwi Kimia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TLDN",
+      "name": "Teladan Prima Agro Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TLKM",
+      "name": "Telkom Indonesia (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TMAS",
+      "name": "Temas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TMPO",
+      "name": "Tempo Inti Media Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TNCA",
+      "name": "Trimuda Nuansa Citra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOBA",
+      "name": "Tbs Energi Utama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOOL",
+      "name": "Rohartindo Nusantara Luas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOPS",
+      "name": "Totalindo Eka Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOSK",
+      "name": "Topindo Solusi Komunika Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOTL",
+      "name": "Total Bangun Persada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOTO",
+      "name": "Surya Toto Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOWR",
+      "name": "Sarana Menara Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TOYS",
+      "name": "Sunindo Adipersada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TPIA",
+      "name": "Chandra Asri Pacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TPMA",
+      "name": "Trans Power Marine Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRAM",
+      "name": "Trada Alam Minera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRGU",
+      "name": "Cerestar Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRIL",
+      "name": "Triwira Insanlestari Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRIM",
+      "name": "Trimegah Sekuritas Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRIN",
+      "name": "Perintis Triniti Properti Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRIO",
+      "name": "Trikomsel Oke Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRIS",
+      "name": "Trisula International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRJA",
+      "name": "Transkon Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRON",
+      "name": "Teknologi Karya Digital Nusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRST",
+      "name": "Trias Sentosa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRUE",
+      "name": "Triniti Dinamik Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRUK",
+      "name": "Guna Timur Raya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TRUS",
+      "name": "Trust Finance Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TSPC",
+      "name": "Tempo Scan Pacific Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TUGU",
+      "name": "Asuransi Tugu Pratama Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "TYRE",
+      "name": "King Tire Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UANG",
+      "name": "Pakuan Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UCID",
+      "name": "Uni-Charm Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UDNG",
+      "name": "Agro Bahari Nusantara Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UFOE",
+      "name": "Damai Sejahtera Abadi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ULTJ",
+      "name": "Ultrajaya Milk Industry And Trading Compa",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNIC",
+      "name": "Unggul Indah Cahaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNIQ",
+      "name": "Ulima Nitra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNIT",
+      "name": "Cahaya Permata Sejahtera Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNSP",
+      "name": "Bakrie Sumatera Plantations Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNTD",
+      "name": "Terang Dunia Internusa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNTR",
+      "name": "United Tractors Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UNVR",
+      "name": "Unilever Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "URBN",
+      "name": "Urban Jakarta Propertindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "UVCR",
+      "name": "Trimegah Karya Pratama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VAST",
+      "name": "Vastland Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VERN",
+      "name": "Verona Indah Pictures Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VICI",
+      "name": "Victoria Care Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VICO",
+      "name": "Victoria Investama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VINS",
+      "name": "Victoria Insurance Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VISI",
+      "name": "Satu Visi Putra Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VIVA",
+      "name": "Visi Media Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VKTR",
+      "name": "Vktr Teknologi Mobilitas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VOKS",
+      "name": "Voksel Electric Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VRNA",
+      "name": "Mizuho Leasing Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "VTNY",
+      "name": "Venteny Fortuna International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WAPO",
+      "name": "Wahana Pronatural Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WBSA",
+      "name": "PT BSA Logistics Indonesia Tbk",
+      "source": "IDX/e-IPO-2026-listing",
+      "listingDate": "2026-04-10"
+    },
+    {
+      "ticker": "WEGE",
+      "name": "Wijaya Karya Bangunan Gedung Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WEHA",
+      "name": "Weha Transportasi Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WGSH",
+      "name": "Wira Global Solusi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WICO",
+      "name": "Wicaksana Overseas International Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WIDI",
+      "name": "Widiant Jaya Krenindo Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WIFI",
+      "name": "Solusi Sinergi Digital Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WIIM",
+      "name": "Wismilak Inti Makmur Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WIKA",
+      "name": "Wijaya Karya (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WINE",
+      "name": "Hatten Bali Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WINR",
+      "name": "Winner Nusantara Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WINS",
+      "name": "Wintermar Offshore Marine Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WIRG",
+      "name": "Wir Asia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WMPP",
+      "name": "Widodo Makmur Perkasa Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WMUU",
+      "name": "Widodo Makmur Unggas Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WOMF",
+      "name": "Wahana Ottomitra Multiartha Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WOOD",
+      "name": "Integra Indocabinet Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WOWS",
+      "name": "Ginting Jaya Energi Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WSBP",
+      "name": "Waskita Beton Precast Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WSKT",
+      "name": "Waskita Karya (Persero) Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "WTON",
+      "name": "Wijaya Karya Beton Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "YELO",
+      "name": "Yelooo Integra Datanet Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "YOII",
+      "name": "Asuransi Digital Bersama Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "YPAS",
+      "name": "Yanaprima Hastapersada Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "YULE",
+      "name": "Yulie Sekuritas Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "YUPI",
+      "name": "Yupi Indo Jelly Gum Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ZATA",
+      "name": "Bersama Zatta Jaya Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ZBRA",
+      "name": "Dosni Roha Indonesia Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ZINC",
+      "name": "Kapuas Prima Coal Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ZONE",
+      "name": "Mega Perintis Tbk",
+      "source": "KSEI-2026-02-27"
+    },
+    {
+      "ticker": "ZYRX",
+      "name": "Zyrexindo Mandiri Buana Tbk",
+      "source": "KSEI-2026-02-27"
+    }
+  ]
+}
